@@ -152,7 +152,7 @@ export const DevActivityHub: React.FC = () => {
             </div>
 
             <span className="text-[11px] font-mono text-zinc-400 hidden sm:inline">
-              BRANCH: main/rpl_journey
+              BRANCH: main/dev_journey
             </span>
           </div>
 

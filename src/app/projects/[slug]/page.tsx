@@ -64,7 +64,7 @@ export async function generateMetadata({
       canonical: canonicalUrl,
     },
     openGraph: {
-      title: `${title} | Danu Sakti`,
+      title: `${title} | ronngranz`,
       description,
       url: canonicalUrl,
       type: 'article',
@@ -79,7 +79,7 @@ export async function generateMetadata({
     },
     twitter: {
       card: 'summary_large_image',
-      title: `${title} | Danu Sakti`,
+      title: `${title} | ronngranz`,
       description,
       creator: '@nuureacher',
       images: [imageUrl],

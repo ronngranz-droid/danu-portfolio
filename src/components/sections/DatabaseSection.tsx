@@ -52,7 +52,7 @@ export const DatabaseSection: React.FC = () => {
           number="DATA"
           category="SCHEMA DESIGN // 3NF"
           title="RELATIONAL PERSISTENCE ARCHITECTURE"
-          subtitle="In Software Engineering (RPL), resilient software begins with disciplined schema modeling. Below is the normalized schema designed for DANATRAIL."
+          subtitle="In Web Application Engineering, resilient software begins with disciplined schema modeling. Below is the normalized schema designed for DANATRAIL."
         />
 
         {/* Database Schema Cards Grid */}

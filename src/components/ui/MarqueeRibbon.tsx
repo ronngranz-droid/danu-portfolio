@@ -19,7 +19,7 @@ export const MarqueeRibbon: React.FC<MarqueeRibbonProps> = ({
     { label: 'NEXT.JS 16 + TURBOPACK', icon: Cpu },
     { label: '60 FPS 3D & CANVAS ENGINES', icon: Layers },
     { label: 'CLEAN ARCHITECTURAL PATTERNS', icon: Code2 },
-    { label: 'SOFTWARE ENGINEERING (RPL)', icon: Terminal },
+    { label: 'WEB APPLICATION DEV', icon: Terminal },
     { label: 'AVAILABLE FOR NEW BUILDS', icon: CheckCircle2 },
   ];
 

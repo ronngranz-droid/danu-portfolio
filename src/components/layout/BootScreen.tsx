@@ -25,14 +25,14 @@ export const BootScreen: React.FC = () => {
     setLogs([]);
 
     const bootSequence = [
-      'DANU_SYSTEM_BIOS // ROM v3.4.0',
+      'RONNGRANZ_SYSTEM_BIOS // ROM v3.4.0',
       'INITIALIZING ARCHITECTURE CORE...',
       'CHECKING SYSTEM INTERFACE... [OK]',
       'LOADING PROFILE & IDENTITY SPECIFICATIONS... [OK]',
       'MOUNTING REPOSITORIES: Kelana, DANATRAIL, ClassHub, D4new Ai... [OK]',
       'HYDRATING INTERACTION MATRIX & UI ENGINE... [OK]',
       'ESTABLISHING TERMINAL: kuze3ez@system:~$ [ONLINE]',
-      'DANU SAKTI ADITYA PERMANA — SYSTEM READY',
+      'RONNGRANZ — SYSTEM READY',
     ];
 
     let step = 0;

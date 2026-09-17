@@ -1,11 +1,11 @@
-﻿import type { MetadataRoute } from 'next';
+import type { MetadataRoute } from 'next';
 
 export default function manifest(): MetadataRoute.Manifest {
   return {
-    name: 'Danu Sakti Aditya Permana - Portfolio OS',
+    name: 'ronngranz - Portfolio OS',
     short_name: 'KUZE3EZ',
     description:
-      'Portfolio of Danu Sakti, Software Engineering student focused on frontend development, web platforms, and digital products.',
+      'Portfolio of ronngranz, Web Developer and Frontend Engineer focused on web platforms and digital products.',
     start_url: '/',
     display: 'standalone',
     background_color: '#FAFAFA',

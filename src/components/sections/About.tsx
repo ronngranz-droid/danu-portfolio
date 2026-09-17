@@ -16,8 +16,8 @@ export const About: React.FC = () => {
           number="002"
           systemTag="SYSTEM OVERVIEW"
           title="PROFILE & DEVELOPMENT."
-          description="Software Engineering student treating code as an engineering craft and digital products as practical problem-solving tools."
-          badgeText="RPL // PROFILE"
+          description="Web Developer & Frontend Engineer crafting intuitive digital products, clean architectures, and modern web experiences."
+          badgeText="DEV // PROFILE"
           badgeColor="yellow"
         />
 
@@ -39,7 +39,7 @@ export const About: React.FC = () => {
                     {/* eslint-disable-next-line @next/next/no-img-element */}
                     <img
                       src="/images/profile.jpg"
-                      alt="Danu Sakti Aditya Permana — Software Engineering Student & Frontend Developer"
+                      alt="ronngranz — Web Developer & Frontend Engineer"
                       width={112}
                       height={112}
                       className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
@@ -65,14 +65,14 @@ export const About: React.FC = () => {
                     {personalInfo.name}
                   </h3>
                   <p className="mt-1.5 font-mono text-xs text-zinc-700 leading-relaxed font-semibold">
-                    Software Engineering (RPL) student focused on building functional web products, clean component architectures, and intuitive digital experiences.
+                    Web Developer &amp; Frontend Engineer focused on building functional web products, clean component architectures, and intuitive digital experiences.
                   </p>
                 </div>
               </div>
 
               {/* Story Narrative */}
               <p className="font-mono text-xs sm:text-sm text-zinc-600 leading-relaxed pt-3 border-t border-zinc-300">
-                Sebagai siswa jurusan Rekayasa Perangkat Lunak (RPL), saya percaya cara belajar paling efektif adalah dengan langsung membuat project nyata: memecahkan kebutuhan riil, merancang skema database yang rapi, menulis kode yang mudah dirawat, dan terus mencoba teknologi web terbaru.
+                Sebagai Web Developer, saya percaya cara belajar paling efektif adalah dengan langsung membuat project nyata: memecahkan kebutuhan riil, merancang skema database yang rapi, menulis kode yang mudah dirawat, dan terus mencoba teknologi web terbaru.
               </p>
 
               {/* Engineering Specs Metadata Matrix */}
@@ -87,7 +87,7 @@ export const About: React.FC = () => {
                 </div>
                 <div className="flex items-center justify-between border-b border-zinc-300/80 pb-2">
                   <dt className="text-zinc-500 font-bold uppercase text-[10px]">DISCIPLINE</dt>
-                  <dd className="font-bold text-zinc-950">Rekayasa Perangkat Lunak</dd>
+                  <dd className="font-bold text-zinc-950">Web Application Dev</dd>
                 </div>
                 <div className="flex items-center justify-between border-b border-zinc-300/80 pb-2">
                   <dt className="text-zinc-500 font-bold uppercase text-[10px]">CURRENT</dt>

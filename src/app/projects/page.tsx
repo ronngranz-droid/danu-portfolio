@@ -11,22 +11,22 @@ import { ArrowLeft } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Projects',
   description:
-    'Explore web applications and software projects built by Danu Sakti, including Kelana, DANATRAIL, ClassHub, and DanewAI.',
+    'Explore web applications and digital products built by ronngranz, including Kelana, DANATRAIL, ClassHub, and DanewAI.',
   alternates: {
     canonical: 'https://kuze3ez.is-a.dev/projects',
   },
   openGraph: {
-    title: 'Projects | Danu Sakti',
+    title: 'Projects | ronngranz',
     description:
-      'Explore web applications and software projects built by Danu Sakti, including Kelana, DANATRAIL, ClassHub, and DanewAI.',
+      'Explore web applications and digital products built by ronngranz, including Kelana, DANATRAIL, ClassHub, and DanewAI.',
     url: 'https://kuze3ez.is-a.dev/projects',
     type: 'website',
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Projects | Danu Sakti',
+    title: 'Projects | ronngranz',
     description:
-      'Explore web applications and software projects built by Danu Sakti, including Kelana, DANATRAIL, ClassHub, and DanewAI.',
+      'Explore web applications and digital products built by ronngranz, including Kelana, DANATRAIL, ClassHub, and DanewAI.',
   },
 };
 
@@ -53,7 +53,7 @@ export default function ProjectsPage() {
           as="h1"
           eyebrow="Complete Catalogue"
           title="All Projects & Products"
-          description="A comprehensive index of all software projects, web platforms, and experimental tools developed by Danu Sakti Aditya Permana."
+          description="A comprehensive index of all software projects, web platforms, and experimental tools developed by ronngranz."
         />
 
         {/* Flagship */}

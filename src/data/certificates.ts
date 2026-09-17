@@ -42,7 +42,7 @@ export const certificates: Certificate[] = [
   {
     id: 'cert-db',
     name: 'Relational Database Fundamentals & SQL',
-    provider: 'Vocational High School Curriculum / RPL',
+    provider: 'Technical Coursework & Assessments',
     date: '2024',
     category: 'Database',
     credentialUrl: '',
@@ -50,11 +50,11 @@ export const certificates: Certificate[] = [
   },
   {
     id: 'cert-se',
-    name: 'Software Engineering Fundamentals (RPL)',
-    provider: 'Rekayasa Perangkat Lunak',
+    name: 'Modern Web Engineering & Software Architecture',
+    provider: 'Technical Coursework & Practical Projects',
     date: '2024',
-    category: 'Software Engineering',
+    category: 'Web Engineering',
     credentialUrl: '',
-    skillsLearned: ['Software Development Life Cycle (SDLC)', 'Agile Basics', 'Testing & Documentation'],
+    skillsLearned: ['Software Development Life Cycle (SDLC)', 'Component Architecture', 'Testing & Documentation'],
   },
 ];

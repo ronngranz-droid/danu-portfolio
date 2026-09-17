@@ -58,11 +58,11 @@ const CSSFallbackBadge: React.FC = () => {
             <div className="space-y-1 text-left font-mono text-[11px]">
               <div>
                 <span className="text-zinc-500 text-[9px] block">OPERATOR</span>
-                <span className="font-bold text-zinc-950">Danu Sakti Aditya Permana</span>
+                <span className="font-bold text-zinc-950">ronngranz</span>
               </div>
               <div>
                 <span className="text-zinc-500 text-[9px] block">DISCIPLINE</span>
-                <span className="font-bold text-[#0038FF]">Software Engineering (RPL)</span>
+                <span className="font-bold text-[#0038FF]">Web Engineering</span>
               </div>
               <div>
                 <span className="text-zinc-500 text-[9px] block">FLAGSHIP</span>
@@ -73,7 +73,7 @@ const CSSFallbackBadge: React.FC = () => {
             <div className="pt-2 border-t border-zinc-200">
               <div className="h-6 bg-zinc-900 rounded-xs flex items-center justify-center">
                 <span className="font-mono text-[9px] text-zinc-400 tracking-widest font-bold">
-                  DSAP-2026-RPL-TOKEN
+                  RG-2026-DEV-TOKEN
                 </span>
               </div>
             </div>
@@ -99,7 +99,7 @@ const CSSFallbackBadge: React.FC = () => {
             </div>
 
             <div className="text-[10px] font-mono text-zinc-500 text-left">
-              AUTHORIZED: LEVEL_01 // RPL_2026
+              AUTHORIZED: LEVEL_01 // DEV_2026
             </div>
           </div>
         </div>

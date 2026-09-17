@@ -159,7 +159,7 @@ export const Hero: React.FC = () => {
                         {/* eslint-disable-next-line @next/next/no-img-element */}
                         <img
                           src="/images/profile.jpg"
-                          alt="Danu Sakti Aditya Permana"
+                          alt="ronngranz"
                           width={56}
                           height={56}
                           className="w-full h-full object-cover object-center"
@@ -174,7 +174,7 @@ export const Hero: React.FC = () => {
                           {personalInfo.name}
                         </div>
                         <div className="text-[10px] text-zinc-400 font-mono">
-                          RPL • Frontend Engineering
+                          Web Development • Frontend
                         </div>
                       </div>
                     </div>
@@ -186,11 +186,11 @@ export const Hero: React.FC = () => {
                       </div>
                       <div className="flex justify-between border-b border-zinc-800/80 pb-1.5">
                         <span className="text-zinc-400">DISCIPLINE</span>
-                        <span className="text-[#FACC15] font-bold">Software Engineering (RPL)</span>
+                        <span className="text-[#FACC15] font-bold">Web Application Engineering</span>
                       </div>
                       <div className="flex justify-between border-b border-zinc-800/80 pb-1.5">
                         <span className="text-zinc-400">ROLE</span>
-                        <span className="text-white font-bold">Frontend Developer</span>
+                        <span className="text-white font-bold">Frontend &amp; Web Developer</span>
                       </div>
                       <div className="flex justify-between border-b border-zinc-800/80 pb-1.5">
                         <span className="text-zinc-400">FLAGSHIP</span>
@@ -243,17 +243,17 @@ export const Hero: React.FC = () => {
                 {/* Micro Tags */}
                 <div className="flex flex-wrap items-center gap-2 mb-3">
                   <span className="bg-[#FF4D8D] text-white font-mono text-[10px] font-black uppercase px-2.5 py-0.5 border border-zinc-950 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] -rotate-1">
-                    STUDENT // RPL INDONESIA
+                    WEB DEVELOPER // INDONESIA
                   </span>
                   <span className="bg-[#F4F2EB] text-zinc-950 font-mono text-[10px] font-bold px-2 py-0.5 border border-zinc-950 shadow-[1px_1px_0px_0px_rgba(0,0,0,1)]">
-                    REKAYASA PERANGKAT LUNAK
+                    MODERN WEB PLATFORMS
                   </span>
                 </div>
 
                 {/* Main Staggered Headline */}
                 <h1 className="space-y-1 sm:space-y-2">
                   <span className="sr-only">
-                    Danu Sakti — Software Engineering Student &amp; Frontend Developer
+                    ronngranz — Web Developer &amp; Frontend Engineer
                   </span>
                   <motion.span
                     aria-hidden="true"
@@ -303,7 +303,7 @@ export const Hero: React.FC = () => {
                     name: <span className="text-[#FACC15]">&quot;{personalInfo.name}&quot;</span>,
                   </p>
                   <p className="text-emerald-400 pl-4 text-[11px]">
-                    school: <span className="text-[#FACC15]">&quot;Software Engineering (RPL)&quot;</span>,
+                    role: <span className="text-[#FACC15]">&quot;Web Developer &amp; Frontend Engineer&quot;</span>,
                   </p>
                   <p className="text-emerald-400 pl-4 text-[11px]">
                     focus: <span className="text-[#FACC15]">&quot;Web Development &amp; AI Tools&quot;</span>,

@@ -12,10 +12,10 @@ interface TerminalLine {
 export const MiniTerminal: React.FC = () => {
   const [inputVal, setInputVal] = useState('');
   const [history, setHistory] = useState<TerminalLine[]>([
-    { type: 'system', text: 'DANU_OS INTERACTIVE TERMINAL [v2.6.0]' },
+    { type: 'system', text: 'RONNGRANZ_OS INTERACTIVE TERMINAL [v2.6.0]' },
     { type: 'system', text: 'Type "help" to view available system commands.' },
     { type: 'input', text: 'whoami' },
-    { type: 'output', text: 'DANU SAKTI ADITYA PERMANA — Software Engineering Student & Frontend Developer' },
+    { type: 'output', text: 'ronngranz — Web Developer & Frontend Engineer' },
     { type: 'input', text: 'current-project' },
     { type: 'output', text: 'KELANA [Active Development] — Language Learning Platform' },
   ]);
@@ -54,14 +54,14 @@ export const MiniTerminal: React.FC = () => {
       case 'whoami':
         newHistory.push({
           type: 'output',
-          text: 'Danu Sakti Aditya Permana | RPL Student @ Indonesia | Focus: Web Development & AI Tools',
+          text: 'ronngranz | Web Developer @ Indonesia | Focus: Web Applications & Modern Frontend',
         });
         break;
 
       case 'about':
         newHistory.push({
           type: 'output',
-          text: 'Software Engineering student who turns ideas into tangible products through design, code, and testing.',
+          text: 'Web Developer and Frontend Engineer who turns ideas into tangible products through design, code, and testing.',
         });
         break;
 

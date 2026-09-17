@@ -93,7 +93,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
                       {/* eslint-disable-next-line @next/next/no-img-element */}
                       <img
                         src="/images/profile.jpg"
-                        alt="Danu Sakti Aditya Permana"
+                        alt="ronngranz"
                         width={80}
                         height={80}
                         className="w-full h-full object-cover object-center"
@@ -112,7 +112,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
                         {personalInfo.name}
                       </h2>
                       <p className="font-mono text-xs sm:text-sm text-[#0038FF] font-bold mt-0.5">
-                        Frontend Developer &bull; Software Engineering (RPL) Student
+                        Web Developer &bull; Frontend Engineer
                       </p>
                     </div>
                   </div>
@@ -151,26 +151,26 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
                 </p>
               </div>
 
-              {/* Education Section */}
+              {/* Core Specialization Section */}
               <div className="space-y-3">
                 <div className="flex items-center gap-2 border-b border-zinc-300 pb-1 font-mono text-xs font-black uppercase text-zinc-950">
-                  <GraduationCap className="w-4 h-4 text-[#0038FF]" />
-                  <span>EDUCATION &amp; FORMAL BACKGROUND</span>
+                  <Code2 className="w-4 h-4 text-[#0038FF]" />
+                  <span>CORE SPECIALIZATION &amp; FOCUS</span>
                 </div>
                 <div className="bg-white border-2 border-zinc-950 p-4 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] space-y-1.5">
                   <div className="flex flex-col sm:flex-row sm:items-center justify-between">
                     <h3 className="font-black text-sm uppercase text-zinc-950">
-                      Rekayasa Perangkat Lunak (Software Engineering)
+                      Modern Web Application &amp; Frontend Engineering
                     </h3>
-                    <span className="font-mono text-xs bg-[#FACC15] px-2 py-0.5 border border-zinc-950 font-bold self-start sm:self-auto">
-                      CURRENT ENROLLMENT
+                    <span className="font-mono text-xs bg-[#A7F3D0] px-2 py-0.5 border border-zinc-950 font-bold self-start sm:self-auto">
+                      ACTIVE PRACTITIONER
                     </span>
                   </div>
                   <p className="text-xs text-zinc-600 font-medium">
-                    Vocational High School (SMK) &bull; Indonesia
+                    Web Developer &bull; Indonesia
                   </p>
                   <p className="text-xs text-zinc-700 font-mono leading-relaxed pt-1">
-                    Fokus pembelajaran: Pemrograman Web modern, Logika Algoritma, Database Relasional (MySQL / 3NF), UI/UX Design System, dan Version Control (Git &amp; GitHub).
+                    Fokus utama: Membangun aplikasi web full-cycle, arsitektur frontend performa tinggi, UI/UX interaktif, database relasional (MySQL / 3NF), dan integrasi teknologi modern.
                   </p>
                 </div>
               </div>

@@ -38,17 +38,17 @@ export const socialLinks: SocialLink[] = [
 ];
 
 export const personalInfo = {
-  name: 'DANU SAKTI ADITYA PERMANA',
-  brandName: 'DANU SAKTI ADITYA PERMANA',
-  role: 'Frontend Developer',
+  name: 'ronngranz',
+  brandName: 'ronngranz',
+  role: 'Web Developer & Frontend Engineer',
   avatarUrl: '/images/profile.jpg',
-  identity: 'Software Engineering Student / RPL Student',
+  identity: 'Web Developer & Frontend Engineer',
   location: 'Indonesia',
   statusBadge: 'Available for collaboration',
   cvPath: '/resume/danu-sakti-cv.pdf',
   tagline: 'I design and build web products focused on learning, productivity, and digital experiences.',
   secondaryTagline:
-    'Currently exploring Web Development, Frontend Engineering, and AI-assisted development.',
+    'Currently exploring Web Development, Modern Frontend Engineering, and AI-assisted tools.',
   aboutLong:
-    "I'm a Software Engineering student who enjoys turning ideas into functional digital products. I focus on web development. Instead of only learning through theory, I like building real projects, solving problems, testing ideas, and continuously improving the products I create.",
+    "I'm a Web Developer and Frontend Engineer who enjoys turning ideas into functional digital products. Instead of only learning through theory, I focus on building real projects, solving problems, crafting intuitive interfaces, and continuously improving web applications.",
 };

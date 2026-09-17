@@ -5,13 +5,13 @@ export const PersonJsonLd: React.FC = () => {
   const data = {
     '@context': 'https://schema.org',
     '@type': 'Person',
-    name: 'Danu Sakti Aditya Permana',
-    alternateName: ['Danu Sakti', 'KUZE3EZ', 'ronngranz'],
+    name: 'ronngranz',
+    alternateName: ['KUZE3EZ', 'ronngranz'],
     url: 'https://kuze3ez.is-a.dev',
     image: 'https://kuze3ez.is-a.dev/images/profile.jpg',
-    jobTitle: 'Software Engineering Student & Frontend Developer',
+    jobTitle: 'Web Developer & Frontend Engineer',
     description:
-      'Software Engineering (RPL) student focused on frontend development, web platforms, and interactive digital products.',
+      'Web Developer and Frontend Engineer focused on modern web applications, UI/UX, and digital products.',
     knowsAbout: [
       'Web Development',
       'Frontend Development',
@@ -41,14 +41,14 @@ export const WebSiteJsonLd: React.FC = () => {
   const data = {
     '@context': 'https://schema.org',
     '@type': 'WebSite',
-    name: 'Danu Sakti Portfolio OS',
+    name: 'ronngranz Portfolio OS',
     alternateName: 'KUZE3EZ Portfolio',
     url: 'https://kuze3ez.is-a.dev',
     description:
-      'Portfolio Danu Sakti, Software Engineering student focused on frontend development, web development, UI/UX, databases, and building digital products.',
+      'Portfolio of ronngranz, Web Developer and Frontend Engineer focused on web applications, UI/UX, databases, and building digital products.',
     author: {
       '@type': 'Person',
-      name: 'Danu Sakti Aditya Permana',
+      name: 'ronngranz',
     },
     inLanguage: 'en-US',
   };
@@ -77,7 +77,7 @@ export const ProjectJsonLd: React.FC<ProjectJsonLdProps> = ({ project }) => {
     url: `${baseUrl}/projects/${project.slug}`,
     author: {
       '@type': 'Person',
-      name: 'Danu Sakti Aditya Permana',
+      name: 'ronngranz',
     },
     image: `${baseUrl}${project.imageUrl}`,
     offers: {

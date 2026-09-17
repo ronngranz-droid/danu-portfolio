@@ -78,8 +78,8 @@ export default function Loading() {
 
         {/* System identity tag */}
         <div className="pt-2 border-t border-zinc-800 flex justify-between items-center text-[10px] text-zinc-500 font-bold uppercase">
-          <span>DANU SAKTI ADITYA PERMANA</span>
-          <span>RPL INDONESIA</span>
+          <span>RONNGRANZ</span>
+          <span>WEB DEVELOPER</span>
         </div>
       </motion.div>
     </div>

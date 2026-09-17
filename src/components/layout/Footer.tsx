@@ -16,14 +16,14 @@ export const Footer: React.FC = () => {
           <div className="md:col-span-6 space-y-4">
             <div className="flex items-center gap-2">
               <span className="flex h-8 w-8 items-center justify-center border-2 border-zinc-950 bg-yellow-300 text-xs font-black text-zinc-950 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                DS
+                RG
               </span>
               <span className="text-base font-black text-zinc-950 tracking-tight font-mono">
                 {personalInfo.brandName}
               </span>
             </div>
             <p className="text-xs text-zinc-600 max-w-sm leading-relaxed font-sans">
-              Software Engineering (RPL) Student &amp; Frontend Developer. Building practical, responsive web apps with clean code and interactive UX.
+              Web Developer &amp; Frontend Engineer. Building practical, responsive web apps with clean code and interactive UX.
             </p>
             <div className="flex items-center gap-2.5 pt-2">
               {socialLinks.map((item) => (
@@ -113,7 +113,7 @@ export const Footer: React.FC = () => {
         <div className="pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-zinc-600 font-mono">
           <div className="flex items-center gap-2">
             <Terminal className="w-3.5 h-3.5 text-zinc-950" />
-            <span>© {new Date().getFullYear()} DANU SAKTI ADITYA PERMANA. ALL RIGHTS RESERVED.</span>
+            <span>© {new Date().getFullYear()} RONNGRANZ. ALL RIGHTS RESERVED.</span>
           </div>
           <a
             href="#hero"

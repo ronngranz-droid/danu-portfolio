@@ -198,7 +198,7 @@ export const Navbar: React.FC = () => {
                   <span>VIEW CV / RESUME</span>
                 </button>
                 <div className="flex items-center justify-between font-mono text-[10px] text-zinc-500 font-bold uppercase">
-                  <span>DANU.SYSTEM // RPL</span>
+                  <span>RONNGRANZ.SYSTEM // WEB_DEV</span>
                   <span className="bg-[#A7F3D0] text-zinc-950 px-2 py-0.5 border border-zinc-950">
                     ONLINE
                   </span>

@@ -13,8 +13,8 @@ export const Learning: React.FC = () => {
         <SectionHeader
           number="CERT"
           category="CREDENTIALS & ASSESSMENTS"
-          title="VERIFIED VOCATIONAL & COURSEWORK CREDENTIALS"
-          subtitle="Continuous skill acquisition in software engineering through verified training curricula and vocational tracks."
+          title="TECHNICAL CREDENTIALS & COURSEWORK"
+          subtitle="Continuous skill acquisition in modern web technologies and frontend engineering through verified training curricula."
         />
 
         {/* Certificate Cards Grid */}
@@ -76,7 +76,7 @@ export const Learning: React.FC = () => {
                   </a>
                 ) : (
                   <span className="text-zinc-500 text-[10px] font-bold">
-                    [ VOCATIONAL_VERIFIED ]
+                    [ VERIFIED_COURSEWORK ]
                   </span>
                 )}
                 <Award className="h-4 w-4 text-yellow-500" />

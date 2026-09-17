@@ -25,11 +25,11 @@ function createBadgeTextures() {
 
   ctx.fillStyle = '#FACC15';
   ctx.font = 'bold 24px monospace';
-  ctx.fillText('DANU.SYSTEM // 0x7F', 32, 48);
+  ctx.fillText('RONNGRANZ.SYSTEM // 0x7F', 32, 48);
 
   ctx.fillStyle = '#FFFFFF';
   ctx.font = '16px monospace';
-  ctx.fillText('IDENTITY SPECIFICATION // RPL', 32, 82);
+  ctx.fillText('IDENTITY SPECIFICATION // DEV', 32, 82);
 
   // Status Chip
   ctx.fillStyle = '#A7F3D0';
@@ -63,13 +63,13 @@ function createBadgeTextures() {
   ctx.font = 'bold 15px monospace';
   ctx.fillText('OPERATOR:', 32, 380);
   ctx.font = 'bold 22px sans-serif';
-  ctx.fillText('Danu Sakti Aditya Permana', 32, 412);
+  ctx.fillText('ronngranz', 32, 412);
 
   ctx.font = 'bold 15px monospace';
   ctx.fillText('DISCIPLINE:', 32, 460);
   ctx.fillStyle = '#0038FF';
   ctx.font = 'bold 20px sans-serif';
-  ctx.fillText('Software Engineering (RPL)', 32, 492);
+  ctx.fillText('Web Engineering & Frontend', 32, 492);
 
   ctx.fillStyle = '#0A0A0A';
   ctx.font = 'bold 15px monospace';
@@ -85,7 +85,7 @@ function createBadgeTextures() {
     ctx.fillRect(i, 630, barW, 60);
   }
   ctx.font = '12px monospace';
-  ctx.fillText('DSAP-2026-RPL-PRODUCTION-TOKEN-OK', 110, 715);
+  ctx.fillText('RG-2026-DEV-PRODUCTION-TOKEN-OK', 110, 715);
 
   const frontTexture = new THREE.CanvasTexture(frontCanvas);
   frontTexture.anisotropy = 8;
@@ -137,7 +137,7 @@ function createBadgeTextures() {
   bctx.fillStyle = '#737373';
   bctx.font = '13px monospace';
   bctx.fillText('AUTHORIZED ACCESS: LEVEL_01', 48, 620);
-  bctx.fillText('ID: 0xDANU_SAKTI_ADITYA_PERMANA', 48, 650);
+  bctx.fillText('ID: 0xRONNGRANZ_OPERATOR', 48, 650);
 
   const backTexture = new THREE.CanvasTexture(backCanvas);
   backTexture.anisotropy = 8;
@@ -159,7 +159,7 @@ function createBadgeTextures() {
   sctx.translate(32, 256);
   sctx.rotate(-Math.PI / 2);
   sctx.font = 'bold 24px monospace';
-  sctx.fillText('KUZE3EZ // RPL // 2026', -180, 8);
+  sctx.fillText('KUZE3EZ // DEV // 2026', -180, 8);
   sctx.restore();
 
   const strapTexture = new THREE.CanvasTexture(strapCanvas);

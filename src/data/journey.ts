@@ -77,7 +77,7 @@ export const developmentJourney: JourneyMilestone[] = [
     step: '10',
     title: 'Building Complete Software Products',
     description:
-      'Unifying the entire RPL / Software Engineering curriculum into full-cycle products: from problem definition and database schemas to intuitive UIs and iteration.',
+      'Unifying modern web technologies into full-cycle products: from problem definition and database schemas to intuitive UIs and rapid iteration.',
     focus: 'End-to-end product delivery (Kelana, DANATRAIL, ClassHub)',
     badge: 'Product Engineering',
   },

@@ -235,7 +235,7 @@ export const ProjectCaseStudy: React.FC<ProjectCaseStudyProps> = ({
             <section className="space-y-3">
               <h2 className="text-xl sm:text-2xl font-bold text-zinc-900 tracking-tight flex items-center gap-2">
                 <BookOpen className="h-5 w-5 text-blue-600" />
-                <span>What I Learned (RPL Takeaways)</span>
+                <span>What I Learned (Key Takeaways)</span>
               </h2>
               <div className="space-y-2 text-sm text-zinc-600">
                 {project.learningOutcomes.map((item, idx) => (
