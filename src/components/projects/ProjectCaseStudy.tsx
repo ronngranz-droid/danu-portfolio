@@ -33,7 +33,7 @@ export const ProjectCaseStudy: React.FC<ProjectCaseStudyProps> = ({
   nextProject,
 }) => {
   return (
-    <div className="py-12 md:py-16">
+    <article className="py-12 md:py-16">
       <Container>
         {/* Back Link */}
         <div className="mb-8">
@@ -111,6 +111,7 @@ export const ProjectCaseStudy: React.FC<ProjectCaseStudyProps> = ({
             type={project.mockupType}
             imageUrl={project.imageUrl}
             title={project.title}
+            alt={`${project.title} — ${project.category} case study interface showcase`}
             isFlagship={true}
           />
         </div>
@@ -346,6 +347,6 @@ export const ProjectCaseStudy: React.FC<ProjectCaseStudyProps> = ({
           ) : <div />}
         </div>
       </Container>
-    </div>
+    </article>
   );
 };

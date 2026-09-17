@@ -225,17 +225,21 @@ export const Hero: React.FC = () => {
                 </div>
 
                 {/* Main Staggered Headline */}
-                <div className="space-y-1 sm:space-y-2">
-                  <motion.h1
+                <h1 className="space-y-1 sm:space-y-2">
+                  <span className="sr-only">
+                    Danu Sakti — Software Engineering Student &amp; Frontend Developer
+                  </span>
+                  <motion.span
+                    aria-hidden="true"
                     initial={{ opacity: 0, x: -15 }}
                     animate={{ opacity: 1, x: 0 }}
                     transition={{ duration: 0.5, delay: 0.15 }}
-                    className="font-extrabold text-4xl sm:text-6xl lg:text-7xl uppercase tracking-tighter text-zinc-950 leading-[0.95] glitch-hover select-none cursor-default"
+                    className="block font-extrabold text-4xl sm:text-6xl lg:text-7xl uppercase tracking-tighter text-zinc-950 leading-[0.95] glitch-hover select-none cursor-default"
                   >
                     <TextScramble text="KUZE3EZ" scrambleOnHover triggerOnView />
-                  </motion.h1>
+                  </motion.span>
 
-                  <div className="flex flex-wrap items-center gap-2 sm:gap-3 pt-1">
+                  <div aria-hidden="true" className="flex flex-wrap items-center gap-2 sm:gap-3 pt-1">
                     <motion.span
                       whileHover={{ scale: 1.05, rotate: -2 }}
                       className="bg-[#FACC15] text-zinc-950 font-extrabold text-2xl sm:text-4xl lg:text-5xl uppercase px-3 py-0.5 sm:px-4 sm:py-1 border-2 border-zinc-950 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] -rotate-1 inline-block select-none cursor-default"
@@ -246,7 +250,7 @@ export const Hero: React.FC = () => {
                       <TextScramble text="DEVELOPER" scrambleOnHover triggerOnView />
                     </span>
                   </div>
-                </div>
+                </h1>
 
                 <p className="mt-4 text-sm sm:text-base font-mono text-zinc-700 leading-relaxed max-w-xl">
                   {personalInfo.tagline}

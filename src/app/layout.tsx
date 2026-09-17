@@ -19,37 +19,77 @@ const geistMono = Geist_Mono({
   subsets: ['latin'],
 });
 
+import { PersonJsonLd, WebSiteJsonLd } from '@/components/seo/JsonLd';
+
+const isPreview = process.env.VERCEL_ENV === 'preview';
+
 export const metadata: Metadata = {
   metadataBase: new URL('https://kuze3ez.is-a.dev'),
-  title: 'Danu Sakti Aditya Permana (KUZE3EZ) — Frontend Developer & Software Engineer',
+  title: {
+    default: 'Danu Sakti — Software Engineering Student & Frontend Developer',
+    template: '%s | Danu Sakti',
+  },
   description:
-    'Portfolio of Danu Sakti Aditya Permana (KUZE3EZ), a Software Engineering student focused on modern web development, interactive 3D interfaces, and digital products.',
+    'Portfolio Danu Sakti, Software Engineering student focused on frontend development, web development, UI/UX, databases, and building digital products.',
+  applicationName: 'Danu Sakti Portfolio OS',
+  authors: [{ name: 'Danu Sakti Aditya Permana (KUZE3EZ)', url: 'https://kuze3ez.is-a.dev' }],
+  creator: 'Danu Sakti Aditya Permana',
+  publisher: 'Danu Sakti Aditya Permana',
   keywords: [
     'Danu Sakti',
     'KUZE3EZ',
     'ronngranz',
     'Frontend Developer',
-    'Software Engineer',
+    'Software Engineering Student',
+    'RPL Indonesia',
     'Next.js',
     'React',
+    'TypeScript',
+    'Tailwind CSS',
+    'Kelana',
     'Portfolio',
-    'RPL Indonesia',
   ],
-  authors: [{ name: 'Danu Sakti Aditya Permana (KUZE3EZ)' }],
+  alternates: {
+    canonical: 'https://kuze3ez.is-a.dev',
+  },
+  robots: {
+    index: !isPreview,
+    follow: !isPreview,
+    googleBot: {
+      index: !isPreview,
+      follow: !isPreview,
+      'max-video-preview': -1,
+      'max-image-preview': 'large',
+      'max-snippet': -1,
+    },
+  },
   openGraph: {
-    title: 'Danu Sakti Aditya Permana (KUZE3EZ) — Frontend Developer & Software Engineer',
+    title: 'Danu Sakti — Software Engineering Student & Frontend Developer',
     description:
-      'Portfolio of Danu Sakti Aditya Permana (KUZE3EZ), a Software Engineering student focused on modern web development, interactive 3D interfaces, and digital products.',
+      'Portfolio, projects, case studies, and software experiments by Danu Sakti.',
     type: 'website',
-    locale: 'id_ID',
+    locale: 'en_US',
     url: 'https://kuze3ez.is-a.dev',
     siteName: 'KUZE3EZ // Portfolio OS',
+    images: [
+      {
+        url: '/images/projects/kelana.png',
+        width: 1200,
+        height: 630,
+        alt: 'Danu Sakti — Portfolio OS & Flagship Projects',
+      },
+    ],
   },
   twitter: {
     card: 'summary_large_image',
-    title: 'Danu Sakti Aditya Permana (KUZE3EZ) — Frontend Developer',
+    title: 'Danu Sakti — Software Engineering Student & Frontend Developer',
     description:
-      'Portfolio of Danu Sakti Aditya Permana (KUZE3EZ), Software Engineering student and Frontend Developer.',
+      'Portfolio, projects, case studies, and software experiments by Danu Sakti.',
+    creator: '@nuureacher',
+    images: ['/images/projects/kelana.png'],
+  },
+  icons: {
+    icon: '/favicon.ico',
   },
 };
 
@@ -63,6 +103,10 @@ export default function RootLayout({
       lang="en"
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased scroll-smooth`}
     >
+      <head>
+        <PersonJsonLd />
+        <WebSiteJsonLd />
+      </head>
       <body className="min-h-full flex flex-col bg-[#FAFAFA] text-[#111111] antialiased relative selection:bg-[#FACC15] selection:text-zinc-950">
         <CyberMatrixBackground />
         <ScrollProgress />

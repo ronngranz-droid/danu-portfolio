@@ -19,6 +19,7 @@ interface MockupFrameProps {
   type: 'kelana' | 'danatrail' | 'classhub' | 'danewai';
   imageUrl?: string;
   title?: string;
+  alt?: string;
   className?: string;
   isFlagship?: boolean;
 }
@@ -58,6 +59,7 @@ export const MockupFrame: React.FC<MockupFrameProps> = ({
   type,
   imageUrl,
   title,
+  alt,
   className = '',
   isFlagship = false,
 }) => {
@@ -137,7 +139,9 @@ export const MockupFrame: React.FC<MockupFrameProps> = ({
             {/* eslint-disable-next-line @next/next/no-img-element */}
             <img
               src={imageUrl}
-              alt={title || type}
+              alt={alt || (title ? `${title} — web application interface preview` : `${type} platform preview`)}
+              width={1200}
+              height={750}
               className="w-full h-full object-cover object-top transition-transform duration-500 ease-out group-hover/screen:scale-[1.025]"
               loading="lazy"
             />
@@ -210,7 +214,9 @@ export const MockupFrame: React.FC<MockupFrameProps> = ({
               {/* eslint-disable-next-line @next/next/no-img-element */}
               <img
                 src={imageUrl}
-                alt={title || type}
+                alt={alt || (title ? `${title} — high resolution interface preview` : `${type} platform preview`)}
+                width={1400}
+                height={900}
                 className="max-w-full h-auto rounded-lg border-2 border-zinc-950 shadow-md object-contain"
               />
             </div>

@@ -9,9 +9,25 @@ import { getFeaturedProjects } from '@/data/projects';
 import { ArrowLeft } from 'lucide-react';
 
 export const metadata: Metadata = {
-  title: 'All Projects — Danu Sakti Aditya Permana',
+  title: 'Projects',
   description:
-    'Explore the complete catalogue of web applications, platforms, and software engineering projects built by Danu Sakti Aditya Permana.',
+    'Explore web applications and software projects built by Danu Sakti, including Kelana, DANATRAIL, ClassHub, and DanewAI.',
+  alternates: {
+    canonical: 'https://kuze3ez.is-a.dev/projects',
+  },
+  openGraph: {
+    title: 'Projects | Danu Sakti',
+    description:
+      'Explore web applications and software projects built by Danu Sakti, including Kelana, DANATRAIL, ClassHub, and DanewAI.',
+    url: 'https://kuze3ez.is-a.dev/projects',
+    type: 'website',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Projects | Danu Sakti',
+    description:
+      'Explore web applications and software projects built by Danu Sakti, including Kelana, DANATRAIL, ClassHub, and DanewAI.',
+  },
 };
 
 export default function ProjectsPage() {
@@ -34,6 +50,7 @@ export default function ProjectsPage() {
         </div>
 
         <SectionHeading
+          as="h1"
           eyebrow="Complete Catalogue"
           title="All Projects & Products"
           description="A comprehensive index of all software projects, web platforms, and experimental tools developed by Danu Sakti Aditya Permana."

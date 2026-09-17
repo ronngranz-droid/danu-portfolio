@@ -21,21 +21,24 @@ import { Github, Linkedin, Instagram } from '@/components/ui/SocialIcons';
 export const Contact: React.FC = () => {
   const [name, setName] = useState('');
   const [email, setEmail] = useState('');
+  const [subject, setSubject] = useState('');
   const [message, setMessage] = useState('');
   const [submitted, setSubmitted] = useState(false);
   const [emailCopied, setEmailCopied] = useState(false);
   const [payloadCopied, setPayloadCopied] = useState(false);
 
+  const finalSubject = subject.trim() || `Portfolio Inquiry from ${name || 'Visitor'}`;
+
   const gmailWebUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=ronngranz@gmail.com&su=${encodeURIComponent(
-    `Portfolio Inquiry from ${name}`
+    finalSubject
   )}&body=${encodeURIComponent(
-    `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+    `Name: ${name}\nEmail: ${email}\nSubject: ${finalSubject}\n\nMessage:\n${message}`
   )}`;
 
   const mailtoUrl = `mailto:ronngranz@gmail.com?subject=${encodeURIComponent(
-    `Portfolio Inquiry from ${name}`
+    finalSubject
   )}&body=${encodeURIComponent(
-    `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+    `Name: ${name}\nEmail: ${email}\nSubject: ${finalSubject}\n\nMessage:\n${message}`
   )}`;
 
   const handleSubmit = (e: React.FormEvent) => {
@@ -252,6 +255,7 @@ export const Contact: React.FC = () => {
                         setSubmitted(false);
                         setName('');
                         setEmail('');
+                        setSubject('');
                         setMessage('');
                       }}
                       className="px-3 py-1.5 font-mono font-bold text-xs bg-zinc-950 text-white border-2 border-zinc-950 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:bg-zinc-800 cursor-pointer"
@@ -264,15 +268,17 @@ export const Contact: React.FC = () => {
                 <form onSubmit={handleSubmit} className="space-y-4 font-mono">
                   <div>
                     <label
-                      htmlFor="name"
+                      htmlFor="contact-name"
                       className="block text-xs font-black text-zinc-950 mb-1"
                     >
                       // INPUT_SENDER_NAME *
                     </label>
                     <input
-                      id="name"
+                      id="contact-name"
+                      name="name"
                       type="text"
                       required
+                      autoComplete="name"
                       value={name}
                       onChange={(e) => setName(e.target.value)}
                       placeholder="e.g. Alex Pratama"
@@ -282,15 +288,17 @@ export const Contact: React.FC = () => {
 
                   <div>
                     <label
-                      htmlFor="email"
+                      htmlFor="contact-email"
                       className="block text-xs font-black text-zinc-950 mb-1"
                     >
                       // INPUT_EMAIL_ADDRESS *
                     </label>
                     <input
-                      id="email"
+                      id="contact-email"
+                      name="email"
                       type="email"
                       required
+                      autoComplete="email"
                       value={email}
                       onChange={(e) => setEmail(e.target.value)}
                       placeholder="alex@example.com"
@@ -300,13 +308,32 @@ export const Contact: React.FC = () => {
 
                   <div>
                     <label
-                      htmlFor="message"
+                      htmlFor="contact-subject"
+                      className="block text-xs font-black text-zinc-950 mb-1"
+                    >
+                      // SUBJECT_TOPIC
+                    </label>
+                    <input
+                      id="contact-subject"
+                      name="subject"
+                      type="text"
+                      value={subject}
+                      onChange={(e) => setSubject(e.target.value)}
+                      placeholder="e.g. Project Collaboration / Internship Inquiry"
+                      className="w-full border-2 border-zinc-950 bg-zinc-50 px-3.5 py-2.5 text-sm text-zinc-950 placeholder:text-zinc-400 focus:bg-white focus:outline-none transition-colors shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]"
+                    />
+                  </div>
+
+                  <div>
+                    <label
+                      htmlFor="contact-message"
                       className="block text-xs font-black text-zinc-950 mb-1"
                     >
                       // PAYLOAD_MESSAGE *
                     </label>
                     <textarea
-                      id="message"
+                      id="contact-message"
+                      name="message"
                       rows={4}
                       required
                       value={message}

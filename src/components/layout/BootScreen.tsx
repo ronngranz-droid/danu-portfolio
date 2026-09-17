@@ -83,6 +83,12 @@ export const BootScreen: React.FC = () => {
   }, []);
 
   useEffect(() => {
+    // Respect user's reduced-motion preference
+    if (typeof window !== 'undefined' && window.matchMedia('(prefers-reduced-motion: reduce)').matches) {
+      setVisible(false);
+      return;
+    }
+
     const interval = startBoot();
 
     const handleKeyDown = (e: KeyboardEvent) => {

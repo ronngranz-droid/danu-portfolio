@@ -98,6 +98,7 @@ export const TextScramble: React.FC<TextScrambleProps> = ({
     <Component
       ref={containerRef as any}
       onMouseEnter={handleMouseEnter}
+      aria-label={text}
       className={`inline-block select-none ${className}`}
     >
       {displayText}

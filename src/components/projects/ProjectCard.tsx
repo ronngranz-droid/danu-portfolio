@@ -47,7 +47,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
   };
 
   return (
-    <motion.div
+    <motion.article
       ref={cardRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
@@ -84,6 +84,7 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
           type={project.mockupType}
           imageUrl={project.imageUrl}
           title={project.title}
+          alt={`${project.title} — ${project.category} application dashboard preview`}
           className="mb-4"
         />
 
@@ -157,13 +158,13 @@ export const ProjectCard: React.FC<ProjectCardProps> = ({ project }) => {
               rel="noopener noreferrer"
               data-cursor="CODE"
               className="bg-white text-zinc-950 border-2 border-zinc-950 p-1.5 rounded-lg shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:bg-zinc-100 hover:-translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] transition-all active:translate-x-0.5 active:translate-y-0.5"
-              aria-label="GitHub Repository"
+              aria-label={`${project.title} GitHub repository source code`}
             >
               <Github className="h-3.5 w-3.5" />
             </a>
           )}
         </div>
       </div>
-    </motion.div>
+    </motion.article>
   );
 };

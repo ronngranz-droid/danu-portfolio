@@ -55,7 +55,7 @@ export const FlagshipCard: React.FC<FlagshipCardProps> = ({ project }) => {
   };
 
   return (
-    <motion.div
+    <motion.article
       ref={cardRef}
       onMouseMove={handleMouseMove}
       onMouseLeave={handleMouseLeave}
@@ -200,6 +200,7 @@ export const FlagshipCard: React.FC<FlagshipCardProps> = ({ project }) => {
             type={project.mockupType}
             imageUrl={project.imageUrl}
             title={project.title}
+            alt="Kelana language learning platform dashboard with Hangul keyboard composer and interactive micro-lessons"
             isFlagship={true}
           />
 
@@ -209,6 +210,6 @@ export const FlagshipCard: React.FC<FlagshipCardProps> = ({ project }) => {
           </div>
         </div>
       </div>
-    </motion.div>
+    </motion.article>
   );
 };

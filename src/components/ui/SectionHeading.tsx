@@ -7,6 +7,7 @@ interface SectionHeadingProps {
   description?: string;
   align?: 'left' | 'center';
   className?: string;
+  as?: 'h1' | 'h2';
 }
 
 export const SectionHeading: React.FC<SectionHeadingProps> = ({
@@ -15,6 +16,7 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
   description,
   align = 'left',
   className,
+  as: Heading = 'h2',
 }) => {
   return (
     <div
@@ -29,9 +31,9 @@ export const SectionHeading: React.FC<SectionHeadingProps> = ({
           {eyebrow}
         </div>
       )}
-      <h2 className="text-2xl font-bold tracking-tight text-zinc-900 sm:text-3xl lg:text-4xl">
+      <Heading className="text-2xl font-bold tracking-tight text-zinc-900 sm:text-3xl lg:text-4xl">
         {title}
-      </h2>
+      </Heading>
       {description && (
         <p className="mt-3 text-base text-zinc-600 sm:text-lg leading-relaxed">
           {description}
