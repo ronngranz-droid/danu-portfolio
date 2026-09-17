@@ -8,6 +8,7 @@ export const PersonJsonLd: React.FC = () => {
     name: 'Danu Sakti Aditya Permana',
     alternateName: ['Danu Sakti', 'KUZE3EZ', 'ronngranz'],
     url: 'https://kuze3ez.is-a.dev',
+    image: 'https://kuze3ez.is-a.dev/images/profile.jpg',
     jobTitle: 'Software Engineering Student & Frontend Developer',
     description:
       'Software Engineering (RPL) student focused on frontend development, web platforms, and interactive digital products.',

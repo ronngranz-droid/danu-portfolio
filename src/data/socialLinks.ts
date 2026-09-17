@@ -41,6 +41,7 @@ export const personalInfo = {
   name: 'DANU SAKTI ADITYA PERMANA',
   brandName: 'DANU SAKTI ADITYA PERMANA',
   role: 'Frontend Developer',
+  avatarUrl: '/images/profile.jpg',
   identity: 'Software Engineering Student / RPL Student',
   location: 'Indonesia',
   statusBadge: 'Available for collaboration',

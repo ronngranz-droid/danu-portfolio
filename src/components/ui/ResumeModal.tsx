@@ -88,21 +88,33 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
               {/* Header Profile Section */}
               <div className="border-b-2 border-zinc-950 pb-6">
                 <div className="flex flex-col sm:flex-row sm:items-center justify-between gap-4">
-                  <div>
-                    <div className="flex items-center gap-2 mb-1">
-                      <span className="bg-[#FF4D8D] text-white font-mono text-[10px] font-black uppercase px-2 py-0.5 border border-zinc-950 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                        KUZE3EZ
-                      </span>
-                      <span className="bg-[#A7F3D0] text-zinc-950 font-mono text-[10px] font-bold px-2 py-0.5 border border-zinc-950">
-                        VERIFIED CANDIDATE
-                      </span>
+                  <div className="flex items-center gap-4">
+                    <div className="relative w-16 h-16 sm:w-20 sm:h-20 rounded-2xl border-2 border-zinc-950 overflow-hidden shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] shrink-0 bg-zinc-200">
+                      {/* eslint-disable-next-line @next/next/no-img-element */}
+                      <img
+                        src="/images/profile.jpg"
+                        alt="Danu Sakti Aditya Permana"
+                        width={80}
+                        height={80}
+                        className="w-full h-full object-cover object-center"
+                      />
                     </div>
-                    <h2 className="text-2xl sm:text-3xl font-black uppercase tracking-tight text-zinc-950">
-                      {personalInfo.name}
-                    </h2>
-                    <p className="font-mono text-sm text-[#0038FF] font-bold mt-0.5">
-                      Frontend Developer &bull; Software Engineering (RPL) Student
-                    </p>
+                    <div>
+                      <div className="flex items-center gap-2 mb-1">
+                        <span className="bg-[#FF4D8D] text-white font-mono text-[10px] font-black uppercase px-2 py-0.5 border border-zinc-950 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
+                          KUZE3EZ
+                        </span>
+                        <span className="bg-[#A7F3D0] text-zinc-950 font-mono text-[10px] font-bold px-2 py-0.5 border border-zinc-950">
+                          VERIFIED CANDIDATE
+                        </span>
+                      </div>
+                      <h2 className="text-xl sm:text-2xl lg:text-3xl font-black uppercase tracking-tight text-zinc-950">
+                        {personalInfo.name}
+                      </h2>
+                      <p className="font-mono text-xs sm:text-sm text-[#0038FF] font-bold mt-0.5">
+                        Frontend Developer &bull; Software Engineering (RPL) Student
+                      </p>
+                    </div>
                   </div>
 
                   {/* Contact Badges */}

@@ -31,24 +31,43 @@ export const About: React.FC = () => {
             className="lg:col-span-6 space-y-6"
           >
             <div className="w-full bg-[#F4F2EB] border-2 border-zinc-950 rounded-2xl p-6 sm:p-8 shadow-[6px_6px_0px_0px_rgba(0,0,0,1)] space-y-6">
-              {/* Header Badges */}
-              <div className="flex flex-wrap items-center gap-2">
-                <span className="bg-[#FACC15] text-zinc-950 font-mono text-[10px] font-black uppercase tracking-wider px-2.5 py-1 border border-zinc-950 shadow-[1px_1px_0px_0px_rgba(0,0,0,1)]">
-                  FRONTEND DEV
-                </span>
-                <span className="bg-white text-zinc-950 font-mono text-[10px] font-black uppercase tracking-wider px-2.5 py-1 border border-zinc-950 shadow-[1px_1px_0px_0px_rgba(0,0,0,1)]">
-                  INDONESIA
-                </span>
-              </div>
+              {/* Operator Identity Card with Photo */}
+              <div className="flex flex-col sm:flex-row items-start gap-4">
+                {/* Photo Frame */}
+                <div className="relative shrink-0 group">
+                  <div className="w-24 h-24 sm:w-28 sm:h-28 rounded-2xl border-2 border-zinc-950 overflow-hidden shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] bg-zinc-200">
+                    {/* eslint-disable-next-line @next/next/no-img-element */}
+                    <img
+                      src="/images/profile.jpg"
+                      alt="Danu Sakti Aditya Permana — Software Engineering Student & Frontend Developer"
+                      width={112}
+                      height={112}
+                      className="w-full h-full object-cover object-center group-hover:scale-105 transition-transform duration-300"
+                    />
+                  </div>
+                  <span className="absolute -bottom-2 -right-1.5 bg-emerald-300 text-zinc-950 border border-zinc-950 text-[9px] font-mono font-black px-1.5 py-0.5 shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] flex items-center gap-1">
+                    <span className="w-1.5 h-1.5 rounded-full bg-emerald-600 animate-pulse" />
+                    <span>OPERATOR</span>
+                  </span>
+                </div>
 
-              {/* Title & Headline */}
-              <div>
-                <h3 className="text-2xl sm:text-3xl font-extrabold uppercase tracking-tight text-zinc-950">
-                  {personalInfo.name}
-                </h3>
-                <p className="mt-2 font-mono text-xs sm:text-sm text-zinc-700 leading-relaxed font-semibold">
-                  Software Engineering (RPL) student focused on building functional web products, clean component architectures, and intuitive digital experiences.
-                </p>
+                {/* Title & Headline */}
+                <div className="flex-1 min-w-0">
+                  <div className="flex flex-wrap items-center gap-2 mb-2">
+                    <span className="bg-[#FACC15] text-zinc-950 font-mono text-[10px] font-black uppercase tracking-wider px-2 py-0.5 border border-zinc-950 shadow-[1px_1px_0px_0px_rgba(0,0,0,1)]">
+                      FRONTEND DEV
+                    </span>
+                    <span className="bg-white text-zinc-950 font-mono text-[10px] font-black uppercase tracking-wider px-2 py-0.5 border border-zinc-950 shadow-[1px_1px_0px_0px_rgba(0,0,0,1)]">
+                      INDONESIA
+                    </span>
+                  </div>
+                  <h3 className="text-xl sm:text-2xl lg:text-3xl font-extrabold uppercase tracking-tight text-zinc-950 leading-tight">
+                    {personalInfo.name}
+                  </h3>
+                  <p className="mt-1.5 font-mono text-xs text-zinc-700 leading-relaxed font-semibold">
+                    Software Engineering (RPL) student focused on building functional web products, clean component architectures, and intuitive digital experiences.
+                  </p>
+                </div>
               </div>
 
               {/* Story Narrative */}

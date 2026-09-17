@@ -153,6 +153,32 @@ export const Hero: React.FC = () => {
                 ) : (
                   /* Developer Spec Sheet Mode */
                   <>
+                    {/* Operator Photo in Specs Mode */}
+                    <div className="flex items-center gap-3 pb-3 mb-3 border-b border-zinc-800">
+                      <div className="relative w-14 h-14 rounded-xl border-2 border-zinc-700 overflow-hidden shadow-[2px_2px_0px_0px_rgba(250,204,21,1)] shrink-0 bg-zinc-800">
+                        {/* eslint-disable-next-line @next/next/no-img-element */}
+                        <img
+                          src="/images/profile.jpg"
+                          alt="Danu Sakti Aditya Permana"
+                          width={56}
+                          height={56}
+                          className="w-full h-full object-cover object-center"
+                        />
+                      </div>
+                      <div className="min-w-0">
+                        <div className="text-[10px] font-mono text-[#FACC15] font-black uppercase tracking-wider flex items-center gap-1.5">
+                          <span className="w-1.5 h-1.5 rounded-full bg-emerald-400 animate-pulse" />
+                          <span>OPERATOR SPEC // 001</span>
+                        </div>
+                        <div className="text-white font-bold text-xs truncate mt-0.5">
+                          {personalInfo.name}
+                        </div>
+                        <div className="text-[10px] text-zinc-400 font-mono">
+                          RPL • Frontend Engineering
+                        </div>
+                      </div>
+                    </div>
+
                     <div className="space-y-2 text-xs">
                       <div className="flex justify-between border-b border-zinc-800/80 pb-1.5">
                         <span className="text-zinc-400">OPERATOR</span>
