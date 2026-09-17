@@ -172,9 +172,9 @@ export const TechEngineeringHub: React.FC = () => {
       <Container>
         <SectionHeader
           number="004"
-          systemTag="ENGINEERING & INFRASTRUCTURE"
-          title="TECH STACK & ARCHITECTURAL SYSTEMS."
-          subtitle="A unified engineering breakdown of active development technologies, multi-tier presentation topologies, and normalized relational schema models."
+          systemTag="TECH STACK & TOOLS"
+          title="TECH STACK & DEVELOPMENT TOOLS."
+          subtitle="Teknologi yang saya pelajari dan gunakan untuk membangun web modern: mulai dari UI interaktif di frontend, logika backend & API, hingga database relasional MySQL."
           badgeText="BENTO // HUB"
           badgeColor="yellow"
         />

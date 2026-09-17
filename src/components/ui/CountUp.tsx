@@ -19,16 +19,20 @@ export const CountUp: React.FC<CountUpProps> = ({
   className = '',
   padZero = 0,
 }) => {
-  const [count, setCount] = useState(0);
+  // Start with 'end' so SSR, web crawlers, and non-JS clients read the actual target metric!
+  const [count, setCount] = useState(end);
   const containerRef = useRef<HTMLSpanElement>(null);
   const hasAnimated = useRef(false);
 
   useEffect(() => {
+    let animationFrameId: number;
+
     const observer = new IntersectionObserver(
       ([entry]) => {
         if (entry.isIntersecting && !hasAnimated.current) {
           hasAnimated.current = true;
-
+          // Reset to 0 and animate up on client viewport intersection
+          setCount(0);
           const startTime = performance.now();
 
           const update = (now: number) => {
@@ -41,16 +45,16 @@ export const CountUp: React.FC<CountUpProps> = ({
             setCount(currentVal);
 
             if (progress < 1) {
-              requestAnimationFrame(update);
+              animationFrameId = requestAnimationFrame(update);
             } else {
               setCount(end);
             }
           };
 
-          requestAnimationFrame(update);
+          animationFrameId = requestAnimationFrame(update);
         }
       },
-      { threshold: 0.2 }
+      { threshold: 0.1 }
     );
 
     const el = containerRef.current;
@@ -58,13 +62,19 @@ export const CountUp: React.FC<CountUpProps> = ({
 
     return () => {
       if (el) observer.unobserve(el);
+      if (animationFrameId) cancelAnimationFrame(animationFrameId);
     };
   }, [end, duration]);
 
   const formattedNumber = padZero > 0 ? String(count).padStart(padZero, '0') : String(count);
+  const targetFormatted = padZero > 0 ? String(end).padStart(padZero, '0') : String(end);
 
   return (
-    <span ref={containerRef} className={className}>
+    <span
+      ref={containerRef}
+      className={className}
+      aria-label={`${prefix}${targetFormatted}${suffix}`}
+    >
       {prefix}
       {formattedNumber}
       {suffix}

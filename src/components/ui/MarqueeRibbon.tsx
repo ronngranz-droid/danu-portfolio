@@ -30,19 +30,54 @@ export const MarqueeRibbon: React.FC<MarqueeRibbonProps> = ({
   };
 
   return (
-    <div className={`relative w-full overflow-hidden py-2.5 font-mono text-xs font-black uppercase tracking-wider select-none ${bgClasses[variant]} ${className}`}>
+    <div
+      role="region"
+      aria-label="Highlights marquee"
+      className={`relative w-full overflow-hidden py-2.5 font-mono text-xs font-black uppercase tracking-wider select-none ${bgClasses[variant]} ${className}`}
+    >
       {/* Moving Marquee Track */}
       <div className="flex w-max animate-marquee space-x-6">
-        {[...items, ...items, ...items].map((item, idx) => {
-          const Icon = item.icon;
-          return (
-            <div key={idx} className="flex items-center space-x-2 shrink-0">
-              <Icon className="w-3.5 h-3.5" />
-              <span>{item.label}</span>
-              <span className="opacity-40">•</span>
-            </div>
-          );
-        })}
+        {/* 1. Primary accessible set (read by screen readers & crawlers once) */}
+        <div className="flex items-center space-x-6 shrink-0">
+          {items.map((item, idx) => {
+            const Icon = item.icon;
+            return (
+              <div key={idx} className="flex items-center space-x-2 shrink-0">
+                <Icon className="w-3.5 h-3.5" />
+                <span>{item.label}</span>
+                <span className="opacity-40">•</span>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* 2. Visual duplicate 1 (aria-hidden for infinite loop) */}
+        <div aria-hidden="true" className="flex items-center space-x-6 shrink-0">
+          {items.map((item, idx) => {
+            const Icon = item.icon;
+            return (
+              <div key={`dup1-${idx}`} className="flex items-center space-x-2 shrink-0">
+                <Icon className="w-3.5 h-3.5" />
+                <span>{item.label}</span>
+                <span className="opacity-40">•</span>
+              </div>
+            );
+          })}
+        </div>
+
+        {/* 3. Visual duplicate 2 (aria-hidden for wide displays) */}
+        <div aria-hidden="true" className="flex items-center space-x-6 shrink-0">
+          {items.map((item, idx) => {
+            const Icon = item.icon;
+            return (
+              <div key={`dup2-${idx}`} className="flex items-center space-x-2 shrink-0">
+                <Icon className="w-3.5 h-3.5" />
+                <span>{item.label}</span>
+                <span className="opacity-40">•</span>
+              </div>
+            );
+          })}
+        </div>
       </div>
     </div>
   );

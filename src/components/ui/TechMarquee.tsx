@@ -14,20 +14,38 @@ export const TechMarquee: React.FC = () => {
     { name: 'VERCEL', bg: 'bg-zinc-950 text-white' },
   ];
 
-  const duplicated = [...techItems, ...techItems];
-
   return (
-    <div className="w-full overflow-hidden border-y-2 border-zinc-950 bg-white py-3 select-none">
+    <div
+      role="region"
+      aria-label="Technologies marquee"
+      className="w-full overflow-hidden border-y-2 border-zinc-950 bg-white py-3 select-none"
+    >
       <div className="animate-marquee flex items-center gap-3">
-        {duplicated.map((item, idx) => (
-          <div
-            key={idx}
-            className={`flex items-center gap-2 px-3 py-1 rounded-md border-2 border-zinc-950 font-mono text-xs font-black uppercase tracking-wider shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] ${item.bg}`}
-          >
-            <span className="w-1.5 h-1.5 rounded-full bg-current" />
-            <span>{item.name}</span>
-          </div>
-        ))}
+        {/* 1. Primary accessible set */}
+        <div className="flex items-center gap-3 shrink-0">
+          {techItems.map((item, idx) => (
+            <div
+              key={idx}
+              className={`flex items-center gap-2 px-3 py-1 rounded-md border-2 border-zinc-950 font-mono text-xs font-black uppercase tracking-wider shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] ${item.bg}`}
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-current" />
+              <span>{item.name}</span>
+            </div>
+          ))}
+        </div>
+
+        {/* 2. Visual duplicate for infinite loop (aria-hidden for screen readers & SEO) */}
+        <div aria-hidden="true" className="flex items-center gap-3 shrink-0">
+          {techItems.map((item, idx) => (
+            <div
+              key={`dup-${idx}`}
+              className={`flex items-center gap-2 px-3 py-1 rounded-md border-2 border-zinc-950 font-mono text-xs font-black uppercase tracking-wider shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] ${item.bg}`}
+            >
+              <span className="w-1.5 h-1.5 rounded-full bg-current" />
+              <span>{item.name}</span>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

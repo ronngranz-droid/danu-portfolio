@@ -15,12 +15,12 @@ export const projects: Project[] = [
     role: [
       'Product Concept & Fullstack Architecture',
       'UI/UX Design & Gamification Tokens',
-      'Frontend Engineering (Next.js 15)',
+      'Frontend Engineering (Next.js 16)',
       'Virtual Hangul Input & Syllable Composer',
       'Audio & Spaced-Repetition System',
     ],
     technologies: [
-      'Next.js 15',
+      'Next.js 16',
       'TypeScript',
       'Tailwind CSS',
       'Web Audio API',
@@ -69,7 +69,7 @@ export const projects: Project[] = [
       },
     ],
     architecture: {
-      frontend: 'Next.js 15 App Router (React 19 Server & Client Components) dengan TypeScript',
+      frontend: 'Next.js 16 App Router (React 19 Server & Client Components) dengan TypeScript',
       backend: 'Next.js Server Actions & Edge Route Handlers',
       database: 'Relational schema ready (PostgreSQL / Supabase) dengan LocalStorage cache',
       apis: ['Web Audio API untuk playback suara', 'Internationalization (i18n) localization'],
@@ -257,7 +257,7 @@ export const projects: Project[] = [
       'Handling Input Multi-modal (Text, Foto, File, Voice)',
     ],
     technologies: [
-      'Next.js 15',
+      'Next.js 16',
       'TypeScript',
       'Tailwind CSS',
       'LLM API Integration',
@@ -297,7 +297,7 @@ export const projects: Project[] = [
       },
     ],
     architecture: {
-      frontend: 'Next.js 15 App Router dengan React Server Components',
+      frontend: 'Next.js 16 App Router dengan React Server Components',
       backend: 'Next.js API Edge Route proxy untuk streaming inference',
       apis: ['OpenAI / Gemini compatible LLM endpoints', 'Server-Sent Events (SSE)'],
       description:

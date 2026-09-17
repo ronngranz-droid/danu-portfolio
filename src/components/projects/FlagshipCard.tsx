@@ -205,7 +205,7 @@ export const FlagshipCard: React.FC<FlagshipCardProps> = ({ project }) => {
 
           <div className="mt-4 p-3 bg-[#F4F2EB] border-2 border-zinc-950 rounded-xl flex items-center justify-between font-mono text-xs">
             <span className="font-bold text-zinc-900">ROLE: Product • Frontend • UI/UX</span>
-            <span className="text-zinc-500 text-[11px]">Next.js 15 App Router</span>
+            <span className="text-zinc-500 text-[11px]">Next.js 16 App Router</span>
           </div>
         </div>
       </div>

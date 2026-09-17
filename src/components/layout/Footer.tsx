@@ -23,7 +23,7 @@ export const Footer: React.FC = () => {
               </span>
             </div>
             <p className="text-xs text-zinc-600 max-w-sm leading-relaxed font-sans">
-              Software Engineering Student / RPL Student & Frontend Developer. Building practical, resilient web products with architectural discipline and UX clarity.
+              Software Engineering (RPL) Student &amp; Frontend Developer. Building practical, responsive web apps with clean code and interactive UX.
             </p>
             <div className="flex items-center gap-2.5 pt-2">
               {socialLinks.map((item) => (
@@ -91,7 +91,7 @@ export const Footer: React.FC = () => {
             <div className="border-2 border-zinc-950 bg-zinc-50 p-3 space-y-1.5 text-[11px] text-zinc-700">
               <div className="flex justify-between">
                 <span>CORE_ENGINE:</span>
-                <span className="font-black text-zinc-950">Next.js 15 App Router</span>
+                <span className="font-black text-zinc-950">Next.js 16 App Router</span>
               </div>
               <div className="flex justify-between">
                 <span>RUNTIME:</span>

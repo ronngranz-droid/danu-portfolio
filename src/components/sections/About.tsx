@@ -53,7 +53,7 @@ export const About: React.FC = () => {
 
               {/* Story Narrative */}
               <p className="font-mono text-xs sm:text-sm text-zinc-600 leading-relaxed pt-3 border-t border-zinc-300">
-                Instead of only learning through passive theory, I believe the deepest progress comes from building real software: identifying daily operational friction, designing normalized data models, testing with real peers, and continuously iterating.
+                Sebagai siswa jurusan Rekayasa Perangkat Lunak (RPL), saya percaya cara belajar paling efektif adalah dengan langsung membuat project nyata: memecahkan kebutuhan riil, merancang skema database yang rapi, menulis kode yang mudah dirawat, dan terus mencoba teknologi web terbaru.
               </p>
 
               {/* Engineering Specs Metadata Matrix */}

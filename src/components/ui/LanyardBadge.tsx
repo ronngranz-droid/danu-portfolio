@@ -86,7 +86,7 @@ const CSSFallbackBadge: React.FC = () => {
                 SYSTEM MATRIX // TECH
               </span>
               <ul className="text-xs space-y-1.5 mt-3 text-zinc-300">
-                <li>• Next.js 15 App Router</li>
+                <li>• Next.js 16 App Router</li>
                 <li>• React 19 + TypeScript</li>
                 <li>• Tailwind CSS + Framer</li>
                 <li>• MySQL 8 + 3NF Schema</li>

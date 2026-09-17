@@ -122,7 +122,7 @@ function createBadgeTextures() {
 
   bctx.fillStyle = '#FFFFFF';
   bctx.font = '16px monospace';
-  bctx.fillText('• Next.js 15 App Router', 48, 180);
+  bctx.fillText('• Next.js 16 App Router', 48, 180);
   bctx.fillText('• React 19 + TypeScript', 48, 220);
   bctx.fillText('• Tailwind CSS + Framer', 48, 260);
   bctx.fillText('• MySQL 8 + 3NF Relational', 48, 300);

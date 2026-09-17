@@ -25,23 +25,23 @@ export const DevActivityHub: React.FC = () => {
 
   const activeSprints = [
     {
-      name: 'Kelana: Hangul IME & Progressive SRS Algorithm',
+      name: 'Kelana: Hangul IME & Spaced-Repetition System',
       category: 'FLAGSHIP // CORE ENGINE',
       progress: 92,
       tag: 'IN_SPRINT',
       color: 'bg-[#FACC15]',
     },
     {
-      name: 'DANATRAIL: Date-Collision Math & Supabase RBAC',
+      name: 'DANATRAIL: Sistem Booking & Validasi Jadwal Jalur',
       category: 'FULLSTACK // BACKEND',
       progress: 85,
       tag: 'TESTING',
       color: 'bg-[#A7F3D0]',
     },
     {
-      name: 'ClassHub: Unified Task Queue & Multi-Role Permissions',
+      name: 'ClassHub: Manajemen Tugas & Hak Akses Siswa-Guru',
       category: 'PRODUCTIVITY // FRONTEND',
-      progress: 55,
+      progress: 60,
       tag: 'ACTIVE_DEV',
       color: 'bg-[#FF4D8D]',
     },
@@ -57,7 +57,7 @@ export const DevActivityHub: React.FC = () => {
           number="005"
           systemTag="DEV LOGS & INNOVATION"
           title="ACTIVITY RADAR & EXPERIMENTAL LAB."
-          subtitle="Real-time development sprints, chronological progression milestones, and experimental R&D prototypes."
+          subtitle="Progres pengembangan proyek aktif, catatan pembelajaran terstruktur, dan eksplorasi fitur baru."
           badgeText="LIVE STREAM"
           badgeColor="emerald"
         />
@@ -78,7 +78,7 @@ export const DevActivityHub: React.FC = () => {
               </span>
             </div>
             <span className="text-[11px] font-bold bg-zinc-100 px-2 py-0.5 border border-zinc-300 text-zinc-700">
-              Q1-Q2 2026 ROADMAP
+              CURRENT SPRINT // 2026 ROADMAP
             </span>
           </div>
 

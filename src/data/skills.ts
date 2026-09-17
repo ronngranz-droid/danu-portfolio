@@ -81,32 +81,32 @@ export const skillCategories: SkillCategory[] = [
 export const currentlyLearningItems = [
   {
     title: 'Advanced JavaScript & TypeScript',
-    description: 'Deepening understanding of asynchronous concurrency, AST transforms, and strict type gymnastics.',
+    description: 'Mendalami asynchronous JavaScript, generic types, type-safe API patterns, dan fitur modern ES2024.',
     tag: 'Language Mastery',
   },
   {
-    title: 'Backend Architecture & Microservices',
-    description: 'Exploring clean architecture, domain-driven design, and event-driven patterns in Node.js and Go.',
+    title: 'Backend & RESTful API Architecture',
+    description: 'Mengeksplorasi struktur backend modular, middleware authentication (JWT), dan clean code di Node.js.',
     tag: 'Backend',
   },
   {
-    title: 'Relational Database Optimization',
-    description: 'Query execution plans (EXPLAIN), B-Tree indexing strategies, and multi-tenant schema isolation.',
+    title: 'Optimasi & Desain Database Relasional',
+    description: 'Mempelajari query indexing, analisis kinerja SQL (EXPLAIN), dan perancangan relasi database yang efisien.',
     tag: 'Database',
   },
   {
-    title: 'Software Architecture Patterns',
-    description: 'MVC, Hexagonal architecture, and decoupling business rules from presentation layers.',
+    title: 'Software Design & Clean Architecture',
+    description: 'Menerapkan konsep MVC, pemisahan logika bisnis dan tampilan, serta struktur komponen yang reusable.',
     tag: 'Engineering',
   },
   {
     title: 'Design Systems & UI Engineering',
-    description: 'Creating accessible headless UI primitives, design tokens, and fluid component libraries.',
+    description: 'Membangun komponen UI yang konsisten, accessible, responsif di berbagai perangkat, dan kaya micro-interaction.',
     tag: 'UI/UX',
   },
   {
-    title: 'AI Integration & Agentic Workflows',
-    description: 'Building multi-step autonomous workflows and Retrieval-Augmented Generation (RAG) pipelines.',
-    tag: 'AI Engineering',
+    title: 'AI Tooling & API Integrations',
+    description: 'Mengintegrasikan generative AI API (Gemini/OpenAI) ke dalam web apps untuk fitur produktivitas interaktif.',
+    tag: 'AI Tools',
   },
 ];

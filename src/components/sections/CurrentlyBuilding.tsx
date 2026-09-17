@@ -197,8 +197,8 @@ export const CurrentlyBuilding: React.FC = () => {
 
                 <div className="pt-3 border-t border-zinc-800 text-[11px] text-zinc-400 flex flex-col gap-1 font-mono">
                   <div className="flex justify-between">
-                    <span>STACK:</span>
-                    <span className="text-white">Next.js 15, Tailwind, Web Audio</span>
+                    <span className="text-zinc-400">STACK:</span>
+                    <span className="text-white">Next.js 16, Tailwind, Web Audio</span>
                   </div>
                   <div className="flex justify-between">
                     <span>COMMIT FREQUENCY:</span>
