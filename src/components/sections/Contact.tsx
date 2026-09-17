@@ -11,7 +11,10 @@ import {
   CheckCircle2,
   ExternalLink,
   MessageSquare,
+  Sparkles,
   Terminal,
+  Copy,
+  Check,
 } from 'lucide-react';
 import { Github, Linkedin, Instagram } from '@/components/ui/SocialIcons';
 
@@ -20,20 +23,42 @@ export const Contact: React.FC = () => {
   const [email, setEmail] = useState('');
   const [message, setMessage] = useState('');
   const [submitted, setSubmitted] = useState(false);
+  const [emailCopied, setEmailCopied] = useState(false);
+  const [payloadCopied, setPayloadCopied] = useState(false);
+
+  const gmailWebUrl = `https://mail.google.com/mail/?view=cm&fs=1&to=ronngranz@gmail.com&su=${encodeURIComponent(
+    `Portfolio Inquiry from ${name}`
+  )}&body=${encodeURIComponent(
+    `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+  )}`;
+
+  const mailtoUrl = `mailto:ronngranz@gmail.com?subject=${encodeURIComponent(
+    `Portfolio Inquiry from ${name}`
+  )}&body=${encodeURIComponent(
+    `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
+  )}`;
 
   const handleSubmit = (e: React.FormEvent) => {
     e.preventDefault();
     if (!name || !email || !message) return;
 
-    // Generate mailto link
-    const mailtoUrl = `mailto:ronngranz@gmail.com?subject=${encodeURIComponent(
-      `Portfolio Inquiry from ${name}`
-    )}&body=${encodeURIComponent(
-      `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
-    )}`;
-
     window.location.href = mailtoUrl;
     setSubmitted(true);
+  };
+
+  const handleCopyEmail = (e: React.MouseEvent) => {
+    e.preventDefault();
+    e.stopPropagation();
+    navigator.clipboard.writeText('ronngranz@gmail.com');
+    setEmailCopied(true);
+    setTimeout(() => setEmailCopied(false), 2000);
+  };
+
+  const handleCopyPayload = () => {
+    const text = `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`;
+    navigator.clipboard.writeText(text);
+    setPayloadCopied(true);
+    setTimeout(() => setPayloadCopied(false), 2000);
   };
 
   const getIcon = (iconName: string) => {
@@ -103,25 +128,57 @@ export const Contact: React.FC = () => {
 
               <div className="space-y-2.5 pt-2">
                 {socialLinks.map((item) => (
-                  <a
+                  <div
                     key={item.label}
-                    href={item.href}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    data-cursor="CONNECT"
-                    className="flex items-center justify-between p-3 border-2 border-zinc-950 bg-zinc-50 hover:bg-yellow-300 transition-colors text-xs text-zinc-950 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-x-0.5 active:translate-y-0.5"
+                    className="flex items-center justify-between p-3 border-2 border-zinc-950 bg-zinc-50 hover:bg-yellow-300 transition-colors text-xs text-zinc-950 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] group"
                   >
-                    <div className="flex items-center gap-3">
-                      <div className="w-8 h-8 flex items-center justify-center bg-white border-2 border-zinc-950">
+                    <a
+                      href={item.href}
+                      target={item.label === 'Email' ? undefined : '_blank'}
+                      rel="noopener noreferrer"
+                      data-cursor="CONNECT"
+                      className="flex items-center gap-3 flex-1 min-w-0"
+                    >
+                      <div className="w-8 h-8 flex items-center justify-center bg-white border-2 border-zinc-950 shrink-0">
                         {getIcon(item.iconName)}
                       </div>
-                      <div>
+                      <div className="truncate">
                         <span className="font-mono font-black text-zinc-950 block">{item.label}</span>
-                        <span className="text-zinc-600 text-[11px] font-mono">{item.handle}</span>
+                        <span className="text-zinc-600 text-[11px] font-mono truncate">{item.handle}</span>
                       </div>
-                    </div>
-                    <ExternalLink className="h-4 w-4 text-zinc-950" />
-                  </a>
+                    </a>
+
+                    {item.label === 'Email' ? (
+                      <button
+                        type="button"
+                        onClick={handleCopyEmail}
+                        className="ml-2 px-2 py-1 font-mono text-[10px] font-black border border-zinc-950 bg-white hover:bg-emerald-300 transition-colors flex items-center gap-1 cursor-pointer shrink-0 shadow-[1px_1px_0px_0px_rgba(0,0,0,1)]"
+                        title="Copy Email Address"
+                      >
+                        {emailCopied ? (
+                          <>
+                            <Check className="w-3 h-3 text-emerald-700" />
+                            <span className="text-emerald-800">COPIED</span>
+                          </>
+                        ) : (
+                          <>
+                            <Copy className="w-3 h-3 text-zinc-700" />
+                            <span>COPY</span>
+                          </>
+                        )}
+                      </button>
+                    ) : (
+                      <a
+                        href={item.href}
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        className="p-1 hover:text-blue-600 shrink-0"
+                        aria-label={`Visit ${item.label}`}
+                      >
+                        <ExternalLink className="h-4 w-4 text-zinc-950" />
+                      </a>
+                    )}
+                  </div>
                 ))}
               </div>
             </div>
@@ -161,20 +218,60 @@ export const Contact: React.FC = () => {
               </div>
 
               {submitted ? (
-                <div className="border-2 border-zinc-950 bg-emerald-100 p-6 text-center space-y-3 font-mono">
-                  <CheckCircle2 className="h-10 w-10 text-emerald-800 mx-auto" />
-                  <h4 className="text-base font-black text-emerald-950">
-                    TRANSMISSION INITIALIZED!
-                  </h4>
-                  <p className="text-xs text-emerald-900 max-w-sm mx-auto font-sans leading-relaxed">
-                    Your email client has been prepared with your message payload. You can also write directly to <strong className="font-mono bg-white px-1 border border-zinc-950">ronngranz@gmail.com</strong>.
-                  </p>
-                  <button
-                    onClick={() => setSubmitted(false)}
-                    className="mt-3 px-4 py-2 font-mono font-bold text-xs bg-white text-zinc-950 border-2 border-zinc-950 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:bg-zinc-100 cursor-pointer"
-                  >
-                    SEND_ANOTHER_PAYLOAD
-                  </button>
+                <div className="border-2 border-zinc-950 bg-emerald-100 p-6 sm:p-8 text-center space-y-4 font-mono">
+                  <CheckCircle2 className="h-12 w-12 text-emerald-800 mx-auto animate-bounce" />
+                  <div className="space-y-1">
+                    <h4 className="text-base sm:text-lg font-black text-emerald-950">
+                      TRANSMISSION INITIALIZED!
+                    </h4>
+                    <p className="text-xs text-emerald-900 max-w-md mx-auto font-sans leading-relaxed">
+                      Pesan Anda sudah disiapkan untuk dikirim ke <strong className="font-mono bg-white px-1.5 py-0.5 border border-zinc-950 text-zinc-950">ronngranz@gmail.com</strong>. Pilih salah satu opsi cepat di bawah:
+                    </p>
+                  </div>
+
+                  {/* Quick Action Buttons */}
+                  <div className="grid grid-cols-1 sm:grid-cols-2 gap-2.5 pt-2 max-w-md mx-auto">
+                    <a
+                      href={gmailWebUrl}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="px-3.5 py-2.5 font-mono font-black text-xs bg-[#0038FF] text-white border-2 border-zinc-950 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:bg-blue-700 flex items-center justify-center gap-1.5 transition-all cursor-pointer"
+                    >
+                      <ExternalLink className="w-3.5 h-3.5" />
+                      <span>OPEN IN GMAIL WEB</span>
+                    </a>
+                    <a
+                      href={mailtoUrl}
+                      className="px-3.5 py-2.5 font-mono font-black text-xs bg-[#FACC15] text-zinc-950 border-2 border-zinc-950 shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:bg-amber-400 flex items-center justify-center gap-1.5 transition-all cursor-pointer"
+                    >
+                      <Mail className="w-3.5 h-3.5" />
+                      <span>OPEN DEFAULT APP</span>
+                    </a>
+                  </div>
+
+                  {/* Copy Payload & New Message */}
+                  <div className="flex flex-wrap items-center justify-center gap-2 pt-2 border-t border-emerald-300">
+                    <button
+                      type="button"
+                      onClick={handleCopyPayload}
+                      className="px-3 py-1.5 font-mono font-bold text-xs bg-white text-zinc-950 border-2 border-zinc-950 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:bg-zinc-100 flex items-center gap-1.5 cursor-pointer"
+                    >
+                      {payloadCopied ? <Check className="w-3.5 h-3.5 text-emerald-600" /> : <Copy className="w-3.5 h-3.5 text-zinc-600" />}
+                      <span>{payloadCopied ? 'PAYLOAD COPIED!' : 'COPY MESSAGE TEXT'}</span>
+                    </button>
+                    <button
+                      type="button"
+                      onClick={() => {
+                        setSubmitted(false);
+                        setName('');
+                        setEmail('');
+                        setMessage('');
+                      }}
+                      className="px-3 py-1.5 font-mono font-bold text-xs bg-zinc-950 text-white border-2 border-zinc-950 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)] hover:bg-zinc-800 cursor-pointer"
+                    >
+                      NEW MESSAGE
+                    </button>
+                  </div>
                 </div>
               ) : (
                 <form onSubmit={handleSubmit} className="space-y-4 font-mono">

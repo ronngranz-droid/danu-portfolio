@@ -20,16 +20,36 @@ const geistMono = Geist_Mono({
 });
 
 export const metadata: Metadata = {
-  title: 'Danu Sakti Aditya Permana — Software Engineering Student & Frontend Developer',
+  metadataBase: new URL('https://kuze3ez.is-a.dev'),
+  title: 'Danu Sakti Aditya Permana (KUZE3EZ) — Frontend Developer & Software Engineer',
   description:
-    'Portfolio of Danu Sakti Aditya Permana, a Software Engineering student focused on web development, UI/UX, databases, and digital product development.',
+    'Portfolio of Danu Sakti Aditya Permana (KUZE3EZ), a Software Engineering student focused on modern web development, interactive 3D interfaces, and digital products.',
+  keywords: [
+    'Danu Sakti',
+    'KUZE3EZ',
+    'ronngranz',
+    'Frontend Developer',
+    'Software Engineer',
+    'Next.js',
+    'React',
+    'Portfolio',
+    'RPL Indonesia',
+  ],
+  authors: [{ name: 'Danu Sakti Aditya Permana (KUZE3EZ)' }],
   openGraph: {
-    title: 'Danu Sakti Aditya Permana — Software Engineering Student & Frontend Developer',
+    title: 'Danu Sakti Aditya Permana (KUZE3EZ) — Frontend Developer & Software Engineer',
     description:
-      'Portfolio of Danu Sakti Aditya Permana, a Software Engineering student focused on web development, UI/UX, databases, and digital product development.',
+      'Portfolio of Danu Sakti Aditya Permana (KUZE3EZ), a Software Engineering student focused on modern web development, interactive 3D interfaces, and digital products.',
     type: 'website',
     locale: 'id_ID',
-    siteName: 'Danu Sakti Aditya Permana Portfolio',
+    url: 'https://kuze3ez.is-a.dev',
+    siteName: 'KUZE3EZ // Portfolio OS',
+  },
+  twitter: {
+    card: 'summary_large_image',
+    title: 'Danu Sakti Aditya Permana (KUZE3EZ) — Frontend Developer',
+    description:
+      'Portfolio of Danu Sakti Aditya Permana (KUZE3EZ), Software Engineering student and Frontend Developer.',
   },
 };
 

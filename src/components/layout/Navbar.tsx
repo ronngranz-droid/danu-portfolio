@@ -5,11 +5,14 @@ import Link from 'next/link';
 import { motion, AnimatePresence } from 'framer-motion';
 import { Container } from '@/components/layout/Container';
 import { personalInfo } from '@/data/socialLinks';
+import { ResumeModal } from '@/components/ui/ResumeModal';
 import { Menu, X, FileDown } from 'lucide-react';
 
 export const Navbar: React.FC = () => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const [activeSection, setActiveSection] = useState('hero');
+  const [isResumeOpen, setIsResumeOpen] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
@@ -86,16 +89,15 @@ export const Navbar: React.FC = () => {
                 <span>REBOOT</span>
               </button>
 
-              <a
-                href={personalInfo.cvPath}
-                target="_blank"
-                rel="noopener noreferrer"
-                data-cursor="PDF"
+              <button
+                type="button"
+                onClick={() => setIsResumeOpen(true)}
+                data-cursor="RESUME"
                 className="font-mono text-xs font-black uppercase bg-[#FACC15] text-zinc-950 border-2 border-zinc-950 px-3 py-1.5 rounded-lg shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] hover:-translate-y-0.5 hover:shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] active:translate-x-0.5 active:translate-y-0.5 active:shadow-[1px_1px_0px_0px_rgba(0,0,0,1)] flex items-center gap-1.5 transition-all cursor-pointer hover:bg-amber-400"
               >
                 <FileDown className="h-3.5 w-3.5" />
-                <span>DOWNLOAD CV</span>
-              </a>
+                <span>VIEW CV / RESUME</span>
+              </button>
             </div>
 
             {/* Mobile Hamburger Toggle */}
@@ -184,16 +186,17 @@ export const Navbar: React.FC = () => {
                   <span>REBOOT SYSTEM (ANIMATION)</span>
                 </button>
 
-                <a
-                  href={personalInfo.cvPath}
-                  target="_blank"
-                  rel="noopener noreferrer"
-                  onClick={() => setIsOpen(false)}
-                  className="w-full justify-center font-mono text-xs font-black uppercase bg-[#FACC15] text-zinc-950 border-2 border-zinc-950 px-4 py-2.5 rounded-xl shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] flex items-center gap-2 hover:bg-amber-400"
+                <button
+                  type="button"
+                  onClick={() => {
+                    setIsOpen(false);
+                    setIsResumeOpen(true);
+                  }}
+                  className="w-full justify-center font-mono text-xs font-black uppercase bg-[#FACC15] text-zinc-950 border-2 border-zinc-950 px-4 py-2.5 rounded-xl shadow-[3px_3px_0px_0px_rgba(0,0,0,1)] flex items-center gap-2 hover:bg-amber-400 cursor-pointer"
                 >
                   <FileDown className="h-4 w-4" />
-                  <span>DOWNLOAD CV (PDF)</span>
-                </a>
+                  <span>VIEW CV / RESUME</span>
+                </button>
                 <div className="flex items-center justify-between font-mono text-[10px] text-zinc-500 font-bold uppercase">
                   <span>DANU.SYSTEM // RPL</span>
                   <span className="bg-[#A7F3D0] text-zinc-950 px-2 py-0.5 border border-zinc-950">
@@ -205,6 +208,8 @@ export const Navbar: React.FC = () => {
           </motion.div>
         )}
       </AnimatePresence>
+
+      <ResumeModal isOpen={isResumeOpen} onClose={() => setIsResumeOpen(false)} />
     </>
   );
 };
