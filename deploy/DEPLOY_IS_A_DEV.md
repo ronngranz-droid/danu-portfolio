@@ -55,7 +55,7 @@ Layanan `is-a.dev` gratis untuk developer dengan mengajukan Pull Request (PR) ke
 {
   "owner": {
     "username": "ronngranz-droid",
-    "email": "danusaktiaditya@gmail.com"
+    "email": "ronngranz@gmail.com"
   },
   "records": {
     "CNAME": "cname.vercel-dns.com"

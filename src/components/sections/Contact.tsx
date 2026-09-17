@@ -26,7 +26,7 @@ export const Contact: React.FC = () => {
     if (!name || !email || !message) return;
 
     // Generate mailto link
-    const mailtoUrl = `mailto:danusaktiaditya@gmail.com?subject=${encodeURIComponent(
+    const mailtoUrl = `mailto:ronngranz@gmail.com?subject=${encodeURIComponent(
       `Portfolio Inquiry from ${name}`
     )}&body=${encodeURIComponent(
       `Name: ${name}\nEmail: ${email}\n\nMessage:\n${message}`
@@ -167,7 +167,7 @@ export const Contact: React.FC = () => {
                     TRANSMISSION INITIALIZED!
                   </h4>
                   <p className="text-xs text-emerald-900 max-w-sm mx-auto font-sans leading-relaxed">
-                    Your email client has been prepared with your message payload. You can also write directly to <strong className="font-mono bg-white px-1 border border-zinc-950">danusaktiaditya@gmail.com</strong>.
+                    Your email client has been prepared with your message payload. You can also write directly to <strong className="font-mono bg-white px-1 border border-zinc-950">ronngranz@gmail.com</strong>.
                   </p>
                   <button
                     onClick={() => setSubmitted(false)}

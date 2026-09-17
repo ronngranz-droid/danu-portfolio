@@ -9,8 +9,8 @@ export interface SocialLink {
 export const socialLinks: SocialLink[] = [
   {
     label: 'Email',
-    href: 'mailto:danusaktiaditya@gmail.com',
-    handle: 'danusaktiaditya@gmail.com',
+    href: 'mailto:ronngranz@gmail.com',
+    handle: 'ronngranz@gmail.com',
     iconName: 'Mail',
     isExternal: true,
   },
@@ -23,15 +23,15 @@ export const socialLinks: SocialLink[] = [
   },
   {
     label: 'LinkedIn',
-    href: 'https://linkedin.com/in/danusakti',
-    handle: 'linkedin.com/in/danusakti',
+    href: 'https://linkedin.com/in/nu-quincy',
+    handle: 'Nu Quincy',
     iconName: 'Linkedin',
     isExternal: true,
   },
   {
     label: 'Instagram',
-    href: 'https://instagram.com/danusakti.dev',
-    handle: '@danusakti.dev',
+    href: 'https://instagram.com/nuureacher',
+    handle: '@nuureacher',
     iconName: 'Instagram',
     isExternal: true,
   },

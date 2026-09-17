@@ -92,7 +92,7 @@ export const MiniTerminal: React.FC = () => {
 
       case 'contact':
         newHistory.push(
-          { type: 'output', text: 'Email   : danusaktiaditya@gmail.com' },
+          { type: 'output', text: 'Email   : ronngranz@gmail.com' },
           { type: 'output', text: 'GitHub  : github.com/ronngranz-droid' },
           { type: 'output', text: 'Status  : Available for Junior roles / Internships' }
         );
