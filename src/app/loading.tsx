@@ -17,7 +17,7 @@ export default function Loading() {
         <div className="flex items-center justify-between border-b border-zinc-800 pb-3 text-xs text-zinc-400">
           <div className="flex items-center gap-2">
             <span className="w-2.5 h-2.5 rounded-full bg-[#FF4D8D] animate-ping" />
-            <span className="text-white font-bold tracking-wider">KUZE3EZ // OS_LOADER</span>
+            <span className="text-white font-bold tracking-wider">D4NEW.SYSTEM // OS_LOADER</span>
           </div>
           <span className="text-emerald-400 font-bold text-[11px] bg-emerald-950/60 border border-emerald-800 px-2 py-0.5 rounded">
             PORT: 3050
@@ -52,7 +52,7 @@ export default function Loading() {
 
           <div className="text-center space-y-1">
             <h2 className="text-lg font-black tracking-tight text-white uppercase">
-              LOADING SYSTEM RESOURCES
+              LOADING D4NEW.SYSTEM
             </h2>
             <p className="text-xs text-zinc-400">
               Synchronizing UI modules, graphics &amp; repositories...
@@ -78,7 +78,7 @@ export default function Loading() {
 
         {/* System identity tag */}
         <div className="pt-2 border-t border-zinc-800 flex justify-between items-center text-[10px] text-zinc-500 font-bold uppercase">
-          <span>RONNGRANZ</span>
+          <span>D4NEW.SYSTEM</span>
           <span>WEB DEVELOPER</span>
         </div>
       </motion.div>

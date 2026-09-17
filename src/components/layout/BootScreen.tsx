@@ -25,14 +25,14 @@ export const BootScreen: React.FC = () => {
     setLogs([]);
 
     const bootSequence = [
-      'RONNGRANZ_SYSTEM_BIOS // ROM v3.4.0',
+      'D4NEW_SYSTEM_BIOS // ROM v3.4.0',
       'INITIALIZING ARCHITECTURE CORE...',
       'CHECKING SYSTEM INTERFACE... [OK]',
       'LOADING PROFILE & IDENTITY SPECIFICATIONS... [OK]',
       'MOUNTING REPOSITORIES: Kelana, DANATRAIL, ClassHub, D4new Ai... [OK]',
       'HYDRATING INTERACTION MATRIX & UI ENGINE... [OK]',
       'ESTABLISHING TERMINAL: kuze3ez@system:~$ [ONLINE]',
-      'RONNGRANZ — SYSTEM READY',
+      'D4NEW.SYSTEM — SYSTEM READY',
     ];
 
     let step = 0;
@@ -134,7 +134,7 @@ export const BootScreen: React.FC = () => {
           <div className="flex flex-wrap items-center justify-between gap-3 text-xs sm:text-sm text-zinc-400 border-b border-zinc-800 pb-4">
             <div className="flex items-center gap-2">
               <span className="w-2.5 h-2.5 rounded-full bg-emerald-500 animate-pulse" />
-              <span className="text-white font-bold tracking-wider">DANU.SYSTEM // BIOS v3.4</span>
+              <span className="text-white font-bold tracking-wider">D4NEW.SYSTEM // BIOS v3.4</span>
             </div>
             <div className="flex items-center gap-4 text-xs text-zinc-400">
               <span className="text-emerald-400 font-semibold">MEM: {memCount} KB OK</span>
@@ -149,14 +149,14 @@ export const BootScreen: React.FC = () => {
             <motion.pre
               initial={{ opacity: 0, y: 5 }}
               animate={{ opacity: 1, y: 0 }}
-              className="text-emerald-400 font-mono text-[9px] sm:text-xs leading-tight mb-6 overflow-x-hidden select-none"
+              className="text-emerald-400 font-mono text-[8px] sm:text-[10px] md:text-xs leading-tight mb-6 overflow-x-hidden select-none"
             >
-{`  ██████╗  █████╗ ███╗   ██╗██╗   ██╗    ███████╗██╗   ██╗███████╗████████╗███████╗███╗   ███╗
-  ██╔══██╗██╔══██╗████╗  ██║██║   ██║    ██╔════╝╚██╗ ██╔╝██╔════╝╚══██╔══╝██╔════╝████╗ ████║
-  ██║  ██║███████║██╔██╗ ██║██║   ██║    ███████╗ ╚████╔╝ ███████╗   ██║   █████╗  ██╔████╔██║
-  ██║  ██║██╔══██║██║╚██╗██║██║   ██║    ╚════██║  ╚██╔╝  ╚════██║   ██║   ██╔══╝  ██║╚██╔╝██║
-  ██████╔╝██║  ██║██║ ╚████║╚██████╔╝    ███████║   ██║   ███████║   ██║   ███████╗██║ ╚═╝ ██║
-  ╚═════╝ ╚═╝  ╚═╝╚═╝  ╚═══╝ ╚═════╝     ╚══════╝   ╚═╝   ╚══════╝   ╚═╝   ╚══════╝╚═╝     ╚═╝`}
+{`  ██████╗ ██╗  ██╗███╗   ██╗███████╗██╗    ██╗    ███████╗██╗   ██╗███████╗████████╗███████╗███╗   ███╗
+  ██╔══██╗██║  ██║████╗  ██║██╔════╝██║    ██║    ██╔════╝╚██╗ ██╔╝██╔════╝╚══██╔══╝██╔════╝████╗ ████║
+  ██║  ██║███████║██╔██╗ ██║█████╗  ██║ █╗ ██║    ███████╗ ╚████╔╝ ███████╗   ██║   █████╗  ██╔████╔██║
+  ██║  ██║╚════██║██║╚██╗██║██╔══╝  ██║███╗██║    ╚════██║  ╚██╔╝  ╚════██║   ██║   ██╔══╝  ██║╚██╔╝██║
+  ██████╔╝     ██║██║ ╚████║███████╗╚███╔███╔╝    ███████║   ██║   ███████║   ██║   ███████╗██║ ╚═╝ ██║
+  ╚═════╝      ╚═╝╚═╝  ╚═══╝╚══════╝ ╚══╝╚══╝     ╚══════╝   ╚═╝   ╚══════╝   ╚═╝   ╚══════╝╚═╝     ╚═╝`}
             </motion.pre>
 
             {/* Boot Log Stream */}
