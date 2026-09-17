@@ -183,19 +183,6 @@ export const Contact: React.FC = () => {
               </div>
             </div>
 
-            {/* Location & Timezone Note */}
-            <div className="border-2 border-zinc-950 bg-zinc-950 text-white p-5 shadow-[4px_4px_0px_0px_rgba(0,0,0,1)] space-y-2 font-mono">
-              <div className="flex items-center justify-between text-xs pb-2 border-b border-zinc-800">
-                <span className="text-yellow-400 font-bold flex items-center gap-2">
-                  <Terminal className="w-3.5 h-3.5" />
-                  AVAILABILITY_STATUS
-                </span>
-                <span className="text-emerald-400 font-bold">READY_TO_SHIP</span>
-              </div>
-              <p className="text-xs text-zinc-300 leading-relaxed font-sans pt-1">
-                Currently open for Frontend Developer roles, web product projects, and high-impact Software Engineering internships.
-              </p>
-            </div>
           </motion.div>
 
           {/* Right Column: Interactive Contact Form */}
