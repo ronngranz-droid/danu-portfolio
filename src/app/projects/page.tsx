@@ -11,14 +11,14 @@ import { ArrowLeft } from 'lucide-react';
 export const metadata: Metadata = {
   title: 'Projects',
   description:
-    'Explore web applications and digital products built by ronngranz, including Kelana, DANATRAIL, ClassHub, and DanewAI.',
+    'Explore web applications and digital products built by ronngranz, including Kelana, DANATRAIL, and DanewAI.',
   alternates: {
     canonical: 'https://kuze3ez.is-a.dev/projects',
   },
   openGraph: {
     title: 'Projects | ronngranz',
     description:
-      'Explore web applications and digital products built by ronngranz, including Kelana, DANATRAIL, ClassHub, and DanewAI.',
+      'Explore web applications and digital products built by ronngranz, including Kelana, DANATRAIL, and DanewAI.',
     url: 'https://kuze3ez.is-a.dev/projects',
     type: 'website',
   },
@@ -26,7 +26,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Projects | ronngranz',
     description:
-      'Explore web applications and digital products built by ronngranz, including Kelana, DANATRAIL, ClassHub, and DanewAI.',
+      'Explore web applications and digital products built by ronngranz, including Kelana, DANATRAIL, and DanewAI.',
   },
 };
 

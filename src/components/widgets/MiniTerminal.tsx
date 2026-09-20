@@ -69,8 +69,7 @@ export const MiniTerminal: React.FC = () => {
         newHistory.push(
           { type: 'output', text: '1. Kelana    - Gamified Language Platform (Flagship)' },
           { type: 'output', text: '2. DANATRAIL - Outdoor Marketplace & Rental Platform' },
-          { type: 'output', text: '3. ClassHub  - Class Workspace & Student Task Management' },
-          { type: 'output', text: '4. D4new Ai  - AI Chat & Developer Workspace' }
+          { type: 'output', text: '3. D4new Ai  - AI Chat & Developer Workspace' }
         );
         break;
 

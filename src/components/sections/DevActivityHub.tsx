@@ -39,9 +39,9 @@ export const DevActivityHub: React.FC = () => {
       color: 'bg-[#A7F3D0]',
     },
     {
-      name: 'ClassHub: Manajemen Tugas & Hak Akses Siswa-Guru',
-      category: 'PRODUCTIVITY // FRONTEND',
-      progress: 60,
+      name: 'D4new Ai: Multi-Session Prompting & Debugging Assistant',
+      category: 'AI_AGENT // FRONTEND',
+      progress: 75,
       tag: 'ACTIVE_DEV',
       color: 'bg-[#FF4D8D]',
     },

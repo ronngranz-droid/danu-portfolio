@@ -165,81 +165,6 @@ export const projects: Project[] = [
     mockupType: 'danatrail',
   },
   {
-    slug: 'classhub',
-    title: 'ClassHub',
-    category: 'Student Productivity & Workspace',
-    tagline: 'Class Workspace & Centralized Task Management.',
-    description:
-      'Workspace produktivitas kelas siswa Rekayasa Perangkat Lunak untuk mengorganisasi tugas harian, deadline mendesak, jadwal mata pelajaran, kalender kelas, jadwal ujian, dan pengumuman KBM terpadu.',
-    status: 'Production',
-    isFlagship: false,
-    featuredOrder: 3,
-    imageUrl: '/images/projects/classhub.png',
-    role: [
-      'Frontend Engineering',
-      'Riset Kebutuhan Siswa RPL Kelas XI',
-      'Manajemen State & Filtering Tugas',
-      'Persistensi Data Lokal & Fitur Pengumuman',
-    ],
-    technologies: [
-      'React',
-      'TypeScript',
-      'Tailwind CSS',
-      'Lucide React',
-      'LocalStorage API',
-    ],
-    keyFeatures: [
-      'Dashboard Hari Ini dengan Peringatan Tugas Aktif & Deadline Mendesak',
-      'Pengumuman Kelas Resmi dengan Aksi "Tandai Dibaca"',
-      'Daftar Tugas & Deadline Berdasarkan Mata Pelajaran',
-      'Jadwal Pelajaran & Kalender Kelas Terintegrasi (XI RPL 1 / RPL1-26)',
-      'Direktori Jadwal Ujian & Materi Belajar Digital',
-      'Feed Aktivitas Kelas & Log Pembaruan Akademik',
-    ],
-    problemSolved: {
-      problem:
-        'Tugas sekolah, jadwal mata pelajaran, dan pengumuman kelas yang disebarkan lewat grup pesan instan sering tertimbun obrolan santai, sehingga siswa melewatkan deadline penting.',
-      solution:
-        'Menyediakan satu workspace dashboard terpusat yang memetakan status tugas hari ini, jadwal mingguan, dan pengumuman kelas yang dapat ditandai selesai/dibaca.',
-    },
-    demoUrl: 'https://bautask.vercel.app/',
-    githubUrl: 'https://github.com/ronngranz-droid/classtask',
-    overview:
-      'ClassHub (ClassTask) dibangun untuk menjawab kebutuhan nyata di kelas Rekayasa Perangkat Lunak. Memprioritaskan kecepatan loading, tampilan rapi tanpa iklan, dan navigasi sidebar yang intuitif untuk mengakses jadwal, materi, dan tugas harian.',
-    goals: [
-      'Memberikan visibilitas instan atas tugas yang harus diselesaikan hari ini',
-      'Menyediakan arsip jadwal pelajaran dan pengumuman doa/KBM yang rapi',
-      'Memastikan aplikasi dapat diakses sangat cepat di perangkat smartphone siswa',
-    ],
-    challenges: [
-      {
-        title: 'Akses Cepat Tanpa Bergantung pada Koneksi Lambat',
-        description:
-          'Koneksi internet di area sekolah terkadang lambat, membuat web app yang lambat sulit dibuka saat jam pergantian pelajaran.',
-        solution:
-          'Membangun arsitektur offline-first dengan LocalStorage dan state in-memory, menghasilkan respon navigasi sub-milidetik.',
-      },
-    ],
-    architecture: {
-      frontend: 'React SPA dengan TypeScript & Tailwind CSS',
-      backend: 'Client-side reactive data store',
-      database: 'LocalStorage persistence dengan state migration',
-      description:
-        'Arsitektur client-first yang ringan dan hemat kuota data, dirancang khusus untuk kenyamanan siswa sehari-hari.',
-    },
-    learningOutcomes: [
-      'Mendalami perancangan dashboard produktivitas dan hierarki navigasi sidebar',
-      'Mengembangkan sistem penanda status (Tandai Dibaca, Pending, Selesai)',
-      'Melakukan usability testing langsung dengan teman sekelas untuk kenyamanan UX',
-    ],
-    nextImprovements: [
-      'Sinkronisasi real-time antar pengurus kelas menggunakan Supabase / WebSocket',
-      'Integrasi ekspor tugas ke format PDF atau Google Calendar',
-      'Fitur voting pemilihan ketua/agenda kelas',
-    ],
-    mockupType: 'classhub',
-  },
-  {
     slug: 'danewai',
     title: 'D4new Ai',
     category: 'AI Chat & Developer Workspace',
@@ -248,7 +173,7 @@ export const projects: Project[] = [
       'Workspace AI cerdas untuk tanya jawab, kirim & scan foto, bantuan penulisan naskah, curated prompt templates, bantuan debugging coding logic, dan manajemen riwayat chat multi-sesi.',
     status: 'Prototype',
     isFlagship: false,
-    featuredOrder: 4,
+    featuredOrder: 3,
     imageUrl: '/images/projects/danewai.png',
     role: [
       'Konsep Produk & Frontend Engineering',

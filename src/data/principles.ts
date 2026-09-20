@@ -39,7 +39,7 @@ export const principles: Principle[] = [
     title: 'Every Project Should Solve a Problem',
     summary: 'Technology is an instrument to solve concrete operational pain points.',
     description:
-      'I don’t build clone apps just to tick off a checklist. Kelana solves Korean keyboard barriers; DANATRAIL fixes double-booking in rental shops; ClassHub cures lost assignment deadlines. Purpose drives better architectural decisions.',
+      'I don’t build clone apps just to tick off a checklist. Kelana solves Korean keyboard barriers; DANATRAIL fixes double-booking in rental shops; D4new Ai streamlines multi-session AI workflows. Purpose drives better architectural decisions.',
   },
   {
     id: 'p6',

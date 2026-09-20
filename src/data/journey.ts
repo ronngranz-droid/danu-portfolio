@@ -78,7 +78,7 @@ export const developmentJourney: JourneyMilestone[] = [
     title: 'Building Complete Software Products',
     description:
       'Unifying modern web technologies into full-cycle products: from problem definition and database schemas to intuitive UIs and rapid iteration.',
-    focus: 'End-to-end product delivery (Kelana, DANATRAIL, ClassHub)',
+    focus: 'End-to-end product delivery (Kelana, DANATRAIL, D4new Ai)',
     badge: 'Product Engineering',
   },
 ];

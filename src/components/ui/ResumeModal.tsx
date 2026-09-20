@@ -265,17 +265,7 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
 
                   <div className="border-2 border-zinc-950 p-3 bg-zinc-50 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
                     <div className="flex justify-between items-start">
-                      <span className="font-black text-sm text-zinc-950">3. CLASSHUB — School Management System</span>
-                      <span className="text-[10px] bg-blue-300 px-1.5 py-0.5 border border-zinc-950 font-bold">DASHBOARD</span>
-                    </div>
-                    <p className="text-zinc-600 text-[11px] font-sans mt-1">
-                      Sistem manajemen kelas dan kehadiran siswa dengan validasi data relasional MySQL.
-                    </p>
-                  </div>
-
-                  <div className="border-2 border-zinc-950 p-3 bg-zinc-50 shadow-[2px_2px_0px_0px_rgba(0,0,0,1)]">
-                    <div className="flex justify-between items-start">
-                      <span className="font-black text-sm text-zinc-950">4. D4NEW AI — Prompt Engineering &amp; AI Assist</span>
+                      <span className="font-black text-sm text-zinc-950">3. D4NEW AI — Prompt Engineering &amp; AI Assist</span>
                       <span className="text-[10px] bg-pink-300 px-1.5 py-0.5 border border-zinc-950 font-bold">AI TOOL</span>
                     </div>
                     <p className="text-zinc-600 text-[11px] font-sans mt-1">
