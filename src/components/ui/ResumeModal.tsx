@@ -132,12 +132,8 @@ export const ResumeModal: React.FC<ResumeModalProps> = ({ isOpen, onClose }) => 
                       </button>
                     </div>
                     <div className="flex items-center justify-between gap-2">
-                      <span className="text-zinc-500 text-[10px]">LINKEDIN:</span>
-                      <span className="font-bold text-zinc-900">Nu Quincy</span>
-                    </div>
-                    <div className="flex items-center justify-between gap-2">
-                      <span className="text-zinc-500 text-[10px]">INSTAGRAM:</span>
-                      <span className="font-bold text-zinc-900">@nuureacher</span>
+                      <span className="text-zinc-500 text-[10px]">GITHUB:</span>
+                      <span className="font-bold text-zinc-900">ronngranz-droid</span>
                     </div>
                     <div className="flex items-center justify-between gap-2">
                       <span className="text-zinc-500 text-[10px]">DOMAIN:</span>

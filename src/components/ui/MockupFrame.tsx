@@ -43,7 +43,7 @@ const PROJECT_CONFIG = {
     domain: 'bautask.vercel.app',
     liveUrl: 'https://bautask.vercel.app/',
     bgClass: 'bg-[#0B132B]',
-    badge: 'STUDENT OS',
+    badge: 'WORKSPACE OS',
     accentColor: '#A7F3D0',
   },
   danewai: {
@@ -374,7 +374,7 @@ function ClasshubPreview() {
           <div className="flex h-6 w-6 items-center justify-center rounded bg-zinc-900 text-white text-[11px] font-bold">
             CH
           </div>
-          <span className="text-xs font-semibold text-zinc-900">XII RPL 1 • Semester 5</span>
+          <span className="text-xs font-semibold text-zinc-900">Task Flow • Active Workspace</span>
         </div>
         <span className="rounded-full bg-red-50 border border-red-200 px-2 py-0.5 text-[10px] font-medium text-red-700">
           2 Deadline Mendesak

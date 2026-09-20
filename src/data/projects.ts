@@ -63,7 +63,7 @@ export const projects: Project[] = [
       {
         title: 'Persistensi Kemajuan Belajar Tanpa Lag',
         description:
-          'Siswa sering berpindah tab atau mengalami koneksi tidak stabil saat mengerjakan latihan soal.',
+          'Pengguna sering berpindah tab atau mengalami koneksi tidak stabil saat mengerjakan latihan soal.',
         solution:
           'Merancang layer state lokal reaktif dengan debounced snapshot sync, menjamin streak dan XP tidak hilang.',
       },

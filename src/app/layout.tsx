@@ -84,7 +84,7 @@ export const metadata: Metadata = {
     title: 'ronngranz — Web Developer & Frontend Engineer',
     description:
       'Portfolio, projects, case studies, and web applications built by ronngranz.',
-    creator: '@nuureacher',
+    creator: '@ronngranz',
     images: ['/images/projects/kelana.png'],
   },
   icons: {

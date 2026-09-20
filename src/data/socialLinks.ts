@@ -21,20 +21,6 @@ export const socialLinks: SocialLink[] = [
     iconName: 'Github',
     isExternal: true,
   },
-  {
-    label: 'LinkedIn',
-    href: 'https://linkedin.com/in/nu-quincy',
-    handle: 'Nu Quincy',
-    iconName: 'Linkedin',
-    isExternal: true,
-  },
-  {
-    label: 'Instagram',
-    href: 'https://instagram.com/nuureacher',
-    handle: '@nuureacher',
-    iconName: 'Instagram',
-    isExternal: true,
-  },
 ];
 
 export const personalInfo = {

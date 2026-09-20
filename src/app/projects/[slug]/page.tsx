@@ -21,11 +21,6 @@ const projectMetaOverrides: Record<string, { title: string; description: string 
     description:
       'Case study of DANATRAIL, an outdoor gear rental and trail booking marketplace built with Next.js, interactive booking workflows, and modern UI.',
   },
-  classhub: {
-    title: 'ClassHub — Student Productivity & Classroom Management Platform',
-    description:
-      'Case study of ClassHub, a school task management and class schedule application designed for student productivity and teacher collaboration.',
-  },
   danewai: {
     title: 'DanewAI — AI Chat & Developer Productivity Tool',
     description:
@@ -81,7 +76,7 @@ export async function generateMetadata({
       card: 'summary_large_image',
       title: `${title} | ronngranz`,
       description,
-      creator: '@nuureacher',
+      creator: '@ronngranz',
       images: [imageUrl],
     },
   };

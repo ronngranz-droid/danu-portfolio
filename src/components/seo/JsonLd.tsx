@@ -24,8 +24,6 @@ export const PersonJsonLd: React.FC = () => {
     ],
     sameAs: [
       'https://github.com/ronngranz-droid',
-      'https://linkedin.com/in/nu-quincy',
-      'https://instagram.com/nuureacher',
     ],
   };
 

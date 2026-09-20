@@ -12,7 +12,7 @@ export const DatabaseSection: React.FC = () => {
       purpose: 'User credentials & role authorization',
       fields: [
         { name: 'id', type: 'INT (PK)', isKey: true, desc: 'Auto increment primary key' },
-        { name: 'name', type: 'VARCHAR(100)', isKey: false, desc: 'Full student / customer name' },
+        { name: 'name', type: 'VARCHAR(100)', isKey: false, desc: 'Full customer / user name' },
         { name: 'email', type: 'VARCHAR(150) UNIQUE', isKey: false, desc: 'Unique account identifier' },
         { name: 'password_hash', type: 'VARCHAR(255)', isKey: false, desc: 'Bcrypt hashed string' },
         { name: 'role', type: 'ENUM("admin","user")', isKey: false, desc: 'Authorization scope' },

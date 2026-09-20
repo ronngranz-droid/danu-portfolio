@@ -12,10 +12,12 @@ export const Journey: React.FC = () => {
     <section id="journey" className="py-16 md:py-24 border-b-2 border-zinc-950 bg-white relative overflow-hidden">
       <Container>
         <SectionHeader
-          number="007"
-          category="DEVELOPMENT LOG"
-          title="ENGINEERING EVOLUTION & MILESTONES"
-          subtitle="Changelog of technical progression as a Software Engineering student — from fundamentals to full-stack systems."
+          number="008"
+          systemTag="VERSION TIMELINE"
+          title="ENGINEERING JOURNEY & EVOLUTION."
+          description="Changelog of technical progression as a Web Developer & Frontend Engineer — from fundamentals to modern web platforms."
+          badgeText="DEV // JOURNEY"
+          badgeColor="yellow"
         />
 
         {/* Git/Timeline Header Log */}
